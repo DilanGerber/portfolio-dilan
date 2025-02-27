@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'border-glow': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
+      },
+      animation: {
+        'border-glow': 'spin 4s linear infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
