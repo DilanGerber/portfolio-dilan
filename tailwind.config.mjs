@@ -20,6 +20,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'zinc-925': '#181d21',
       },
       fontFamily: {
         inter: ['var(--font-inter)']
