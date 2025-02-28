@@ -15,7 +15,7 @@ export default {
         },
       },
       animation: {
-        'border-glow': 'spin 4s linear infinite',
+        'border-spin': 'spin 5s linear infinite',
       },
       colors: {
         background: "var(--background)",
