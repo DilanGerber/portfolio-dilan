@@ -42,7 +42,7 @@ const Experience = () => {
         {experienceData.map((exp) => (
           <div key={exp.id} className="relative mb-8 pl-8">
             <div className="absolute w-4 h-4 bg-green-700 border-2 border-green-800 rounded-full left-[-10px] top-5"></div>
-            <div className="relative border border-green-800 hover:border-green-700 group p-10 rounded-2xl bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 shadow-lg overflow-hidden">
+            <div className="relative border border-green-800 hover:border-green-600 group p-10 rounded-2xl bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 shadow-lg overflow-hidden">
   {/* Fondo animado */}
   <div className="absolute inset-0 bg-gradient-to-r from-green-700/20 to-green-500/50 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
               <div className=' z-10'>
