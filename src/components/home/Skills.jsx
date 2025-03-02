@@ -7,14 +7,14 @@ import React from 'react'
 const mainTechnologies = ["Next.js", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"];
 
 const softSkills = [
-  "Trabajo en equipo",
-  "Resolución de problemas",
-  "Comunicación efectiva",
-  "Adaptabilidad",
-  "Pensamiento crítico",
-  "Creatividad",
+  "Colaboración",
+  "Trabajo en Equipo",
+  "Resolución de conflictos",
+  "Pensamiento analítico",
   "Autodidacta",
-  "Gestión del tiempo",
+  "Escucha activa",
+  "Claridad al explicar ideas",
+  "Evaluación de riesgos",
 ];
 
 const Skills = () => {
@@ -75,37 +75,40 @@ const Skills = () => {
     </div>
   </div>
       </div>
-      <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center my-8">Skills</h3>
       <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 my-5'>
       <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
       
       <h3 className=" relative text-lg lg:text-xl font-bold font-inter text-white text-center">Mi Stack Principal</h3>
       
-      <div className="relative flex justify-center gap-x-16 gap-y-8 mt-8 flex-wrap">
-        {mainTechnologies.map((tech) => (
-          <div key={tech} className="flex flex-col items-center">
-            <img src={technologyIcons[tech]} alt={tech} className="w-12 h-12" />
-            <span className="text-gray-300 text-sm mt-2">{tech}</span>
-          </div>
-        ))}
-      </div>
+      <div className="relative grid grid-cols-3 gap-x-5 gap-y-10 mt-8 ">
+  {mainTechnologies.map((tech) => (
+    <div key={tech} className="flex flex-col items-center">
+      <img
+        src={technologyIcons[tech]}
+        alt={tech}
+        title={tech} // Muestra el nombre en hover
+        className="w-12 h-12"
+      />
     </div>
-    <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
+  ))}
+</div>
+    </div>
+    <div className="relative py-10 px-2 lg:px-5 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
       
-      <h3 className="relative text-lg lg:text-xl font-bold font-inter text-white text-center">Soft Skills</h3>
+      <h3 className="relative text-lg lg:text-xl font-bold font-inter text-white text-center">Habilidades Blandas</h3>
 
-      <div className="flex flex-wrap justify-center gap-3 mt-5">
+      <div className="flex flex-wrap justify-start items-center gap-3 mt-8">
         {softSkills.map((skill, index) => (
-          <span key={index} className="bg-green-700/20 text-green-400 px-4 py-2 rounded-lg text-sm font-medium border border-green-500/50">
+          <span key={index} className="bg-green-700/20 relative text-gray-300 px-2 py-2 rounded-lg text-[0.6rem] sm:text-sm md:text-[0.8rem] lg:text-sm font-medium border border-green-500/50">
             {skill}
           </span>
         ))}
       </div>
     </div>
       </div>
-      <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center my-8">Otras Tecnologias que utilice</h3>
+      <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center my-8">Experiencia en otras Tecnologias</h3>
       <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group my-8 border border-green-800 hover:border-green-600">
           <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
           <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center">Soft Skills</h3>
