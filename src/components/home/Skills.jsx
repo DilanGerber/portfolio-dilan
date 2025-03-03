@@ -43,10 +43,10 @@ const Skills = () => {
     <div className="relative z-10 text-white">
       <div className="flex items-center gap-3">
         <IconDownload className="text-green-400 w-7 h-7" />
-        <h2 className="text-2xl font-bold">Diseño UI/UX</h2>
+        <h2 className=" text-2xl md:text-xl lg:text-2xl text-nowrap font-bold">Diseño UI/UX</h2>
       </div>
       <p className="text-gray-300 mt-2">
-        Creación de interfaces modernas, accesibles y centradas en el usuario. Uso de heurísticas de usabilidad y diseño responsive con Figma y Tailwind.
+        Creación de interfaces modernas, accesibles y centradas en la experiencia de usuario. Principios de usabilidad como diseño responsive.
       </p>
     </div>
   </div>
@@ -55,10 +55,10 @@ const Skills = () => {
     <div className="relative z-10 text-white">
       <div className="flex items-center gap-3">
         <IconBriefcase className="text-green-400 w-7 h-7" />
-        <h2 className="text-2xl font-bold">Optimización Web</h2>
+        <h2 className=" text-2xl md:text-xl  lg:text-2xl font-bold">Web Performance</h2>
       </div>
       <p className="text-gray-300 mt-2">
-        Mejora de rendimiento y accesibilidad con técnicas avanzadas. Optimización de imágenes, lazy loading, reducción de tiempos de carga y SEO técnico.
+        Mejora de rendimiento y accesibilidad. Optimización de imágenes, lazy loading, reducción de tiempos de carga y SEO técnico.
       </p>
     </div>
   </div>
@@ -67,46 +67,42 @@ const Skills = () => {
     <div className="relative z-10 text-white">
       <div className="flex items-center gap-3">
         <IconCV className="text-green-400 w-7 h-7" />
-        <h2 className="text-2xl font-bold">Autenticación y Seguridad</h2>
+        <h2 className=" text-2xl md:text-xl lg:text-2xl font-bold">Seguridad</h2>
       </div>
       <p className="text-gray-300 mt-2">
-        Implementación de autenticación segura con OAuth, JWT y NextAuth. Protección contra vulnerabilidades como CSRF y XSS.
+        Implementación de autenticación segura con OAuth, JWT y Auth.js. Protección de datos y contra vulnerabilidades como CSRF y XSS.
       </p>
     </div>
   </div>
       </div>
       <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 my-5'>
-      <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
-      
-      <h3 className=" relative text-lg lg:text-xl font-bold font-inter text-white text-center">Mi Stack Principal</h3>
-      
-      <div className="relative grid grid-cols-3 gap-x-5 gap-y-10 mt-8 ">
-  {mainTechnologies.map((tech) => (
-    <div key={tech} className="flex flex-col items-center">
-      <img
-        src={technologyIcons[tech]}
-        alt={tech}
-        title={tech} // Muestra el nombre en hover
-        className="w-12 h-12"
-      />
-    </div>
-  ))}
-</div>
-    </div>
-    <div className="relative py-10 px-2 lg:px-5 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
-      
-      <h3 className="relative text-lg lg:text-xl font-bold font-inter text-white text-center">Habilidades Blandas</h3>
-
-      <div className="flex flex-wrap justify-start items-center gap-3 mt-8">
-        {softSkills.map((skill, index) => (
-          <span key={index} className="bg-green-700/20 relative text-gray-300 px-2 py-2 rounded-lg text-[0.6rem] sm:text-sm md:text-[0.8rem] lg:text-sm font-medium border border-green-500/50">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
+        <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
+          <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
+            <h3 className=" relative text-lg lg:text-xl font-bold font-inter text-white text-center">Mi Stack Principal</h3>
+            <div className="relative grid grid-cols-3 gap-x-5 gap-y-10 mt-8 ">
+              {mainTechnologies.map((tech) => (
+                <div key={tech} className="flex flex-col items-center">
+                  <img
+                    src={technologyIcons[tech]}
+                    alt={tech}
+                    title={tech} // Muestra el nombre en hover
+                    className="w-12 h-12"
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className="relative py-10 px-2 lg:px-5 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
+          <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-green-500/40 to-transparent blur-xl transition-all duration-500 ease-in-out group-hover:h-full"></div>
+            <h3 className="relative text-lg lg:text-xl font-bold font-inter text-white text-center">Habilidades Blandas</h3>
+            <div className="flex flex-wrap justify-start items-center gap-3 mt-8">
+              {softSkills.map((skill, index) => (
+                <span key={index} className="bg-green-700/20 relative text-gray-300 px-2 py-2 rounded-lg text-[0.6rem] sm:text-sm md:text-[0.8rem] lg:text-sm font-medium border border-green-500/50">
+                  {skill}
+                </span>
+              ))}
+            </div>
+        </div>
       </div>
       <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center my-8">Experiencia en otras Tecnologias</h3>
       <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group my-8 border border-green-800 hover:border-green-600">
