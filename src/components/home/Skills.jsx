@@ -3,6 +3,7 @@ import IconCV from '@/icons/IconCV'
 import IconDownload from '@/icons/IconDownload'
 import { technologyIcons } from '@/lib/technologyIcons';
 import React from 'react'
+import SkillsSlider from '../ui/SkillsSlider';
 
 const mainTechnologies = ["Next.js", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"];
 
@@ -38,42 +39,42 @@ const Skills = () => {
 </div> */}
 
       <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10'>
-      <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
-    <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
-    <div className="relative z-10 text-white">
-      <div className="flex items-center gap-3">
-        <IconDownload className="text-green-400 w-7 h-7" />
-        <h2 className=" text-2xl md:text-xl lg:text-2xl text-nowrap font-bold">Diseño UI/UX</h2>
-      </div>
-      <p className="text-gray-300 mt-2">
-        Creación de interfaces modernas, accesibles y centradas en la experiencia de usuario. Principios de usabilidad como diseño responsive.
-      </p>
-    </div>
-  </div>
-  <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
-    <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
-    <div className="relative z-10 text-white">
-      <div className="flex items-center gap-3">
-        <IconBriefcase className="text-green-400 w-7 h-7" />
-        <h2 className=" text-2xl md:text-xl  lg:text-2xl font-bold">Web Performance</h2>
-      </div>
-      <p className="text-gray-300 mt-2">
-        Mejora de rendimiento y accesibilidad. Optimización de imágenes, lazy loading, reducción de tiempos de carga y SEO técnico.
-      </p>
-    </div>
-  </div>
-  <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
-    <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
-    <div className="relative z-10 text-white">
-      <div className="flex items-center gap-3">
-        <IconCV className="text-green-400 w-7 h-7" />
-        <h2 className=" text-2xl md:text-xl lg:text-2xl font-bold">Seguridad</h2>
-      </div>
-      <p className="text-gray-300 mt-2">
-        Implementación de autenticación segura con OAuth, JWT y Auth.js. Protección de datos y contra vulnerabilidades como CSRF y XSS.
-      </p>
-    </div>
-  </div>
+        <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
+          <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
+          <div className="relative z-10 text-white">
+            <div className="flex items-center gap-3">
+              <IconDownload className="text-green-400 w-7 h-7" />
+              <h2 className=" text-2xl md:text-xl lg:text-2xl text-nowrap font-bold">Diseño UI/UX</h2>
+            </div>
+            <p className="text-gray-300 mt-2">
+              Creación de interfaces modernas, accesibles y centradas en la experiencia de usuario. Principios de usabilidad como diseño responsive.
+            </p>
+          </div>
+        </div>
+        <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
+          <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
+          <div className="relative z-10 text-white">
+            <div className="flex items-center gap-3">
+              <IconBriefcase className="text-green-400 w-7 h-7" />
+              <h2 className=" text-2xl md:text-xl  lg:text-2xl font-bold">Web Performance</h2>
+            </div>
+            <p className="text-gray-300 mt-2">
+              Mejora de rendimiento y accesibilidad. Optimización de imágenes, lazy loading, reducción de tiempos de carga y SEO técnico.
+            </p>
+          </div>
+        </div>
+        <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
+          <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
+          <div className="relative z-10 text-white">
+            <div className="flex items-center gap-3">
+              <IconCV className="text-green-400 w-7 h-7" />
+              <h2 className=" text-2xl md:text-xl lg:text-2xl font-bold">Seguridad</h2>
+            </div>
+            <p className="text-gray-300 mt-2">
+              Implementación de autenticación segura con OAuth, JWT y Auth.js. Protección de datos y contra vulnerabilidades como CSRF y XSS.
+            </p>
+          </div>
+        </div>
       </div>
       <div className=' grid grid-cols-1 md:grid-cols-2 gap-5 my-5'>
         <div className="relative p-10 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 group border border-green-800 hover:border-green-600">
@@ -119,8 +120,11 @@ const Skills = () => {
     <li>ABUB66555</li>
   </ol>
         </div>
+        <SkillsSlider />
     </section>
   )
 }
 
 export default Skills
+
+// Redux, Prisma, PostgreSQL, Firebase, Docker, Vercel, Railway, Postman, Figma, Framer Motion, Git, Python, TypeScipt, OAuth, JWT, MySQL, React, Nodemailer, Resend, Auth.js, ShadCN
