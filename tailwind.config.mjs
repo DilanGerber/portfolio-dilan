@@ -17,15 +17,15 @@ export default {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-105%)' }
         },
-        'loop-scroll-left': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(105%)' }
+        'loop-scroll-reverse': {
+          from: { transform: 'translateX(-105%)' },
+          to: { transform: 'translateX(0)' }
         }
       },
       animation: {
         'border-spin': 'spin 5s linear infinite',
         'loop-scroll': 'loop-scroll 20s linear infinite',
-        'loop-scroll-left': 'loop-scroll-left 20s linear infinite'
+        'loop-scroll-reverse': 'loop-scroll-reverse 20s linear infinite',
       },
       colors: {
         background: "var(--background)",
