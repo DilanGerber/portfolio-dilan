@@ -13,3 +13,9 @@ html {
 .light {
   @apply bg-zinc-50 text-zinc-900;
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}

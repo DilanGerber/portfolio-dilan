@@ -13,9 +13,14 @@ export default {
           '50%': { 'background-position': '100% 50%' },
           '100%': { 'background-position': '0% 50%' },
         },
+        'loop-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-105%)' }
+        }
       },
       animation: {
         'border-spin': 'spin 5s linear infinite',
+        'loop-scroll': 'loop-scroll 20s linear infinite'
       },
       colors: {
         background: "var(--background)",
