@@ -24,3 +24,14 @@ html {
   -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
   mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
 }
+
+.github-calendar-wrapper {
+  display: flex;
+  overflow-x: auto; 
+  scroll-behavior: smooth; /* Hace que el scroll sea más fluido */
+  direction: rtl; /* Mueve el scroll hacia el final */
+}
+
+.github-calendar-container {
+  direction: ltr; /* Permite que el contenido dentro del div se vea normal */
+}
