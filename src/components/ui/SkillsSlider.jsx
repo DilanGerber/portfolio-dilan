@@ -1,6 +1,6 @@
 import React from 'react'
 const filaOneTechnologies = ["Git", "Python", "TypeScript", "Cloudinary", "JWT", "MySQL", "Framer Motion", "Nodemailer", "Auth.js"]
-const filaTwoTechnologies = ["Redux", "Prisma", "PostgreSQL", "Firebase", "Docker", "ShadCN", "Postman", "Figma", "React"]
+const filaTwoTechnologies = ["Redux", "Prisma", "PostgreSQL", "Firebase", "Docker", "ShadCN", "Thunder Client", "Figma", "React"]
 import { technologyIcons } from '@/lib/technologyIcons';
 
 const SkillsSlider = () => {
