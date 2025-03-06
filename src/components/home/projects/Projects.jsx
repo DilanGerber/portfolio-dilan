@@ -67,7 +67,7 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <section className='relative px-4 mt-10 max-w-[1000px] mx-auto'>
+    <section className='relative px-4 max-w-[1000px] mx-auto mt-20 mb-24'>
       <h2 className="text-3xl lg:text-4xl font-bold font-inter text-green-700 dark:text-gray-900 text-center mb-10">Proyectos</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1000px] gap-x-8 gap-y-16 lg:gap-y-10 ">
         {projectData.map(({ id, title, description, image, tecnologies, link }) => (

@@ -20,9 +20,9 @@ const softSkills = [
 
 const Skills = () => {
   return (
-    <section className=' relative px-4 mt-10 max-w-[1000px] mx-auto'>
+    <section className=' relative px-4 my-20 max-w-[1000px] mx-auto'>
       <h2 className="text-3xl lg:text-4xl font-bold font-inter text-green-700 text-center">Mis Habilidades</h2>
-      <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10'>
+      <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-12'>
         <div className="relative group w-full p-8 rounded-2xl bg-zinc-925 overflow-hidden shadow-lg transition-all duration-500 border border-green-800 hover:border-green-600 ">
           <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
           <div className="relative z-10 text-white">
@@ -96,7 +96,7 @@ const Skills = () => {
             </div>
         </div>
       </div>
-      <h3 className="text-lg lg:text-xl font-bold font-inter text-gray-200 text-center my-8">Habilidades técnicas adicionales</h3>
+      <h3 className="text-lg lg:text-2xl font-bold font-inter text-gray-200 text-center my-12">Habilidades técnicas adicionales</h3>
       <SkillsSlider />
     </section>
   )

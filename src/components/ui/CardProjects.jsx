@@ -45,9 +45,8 @@ const CardProjects = ({ image, title, description, tecnologies, link }) => {
             ))}
           </div>
 
-          <div className="absolute right-3 justify-center items-center gap-3 border px-3 py-2 rounded-2xl hidden lg:flex">
-            <p className="whitespace-nowrap text-xl text-gray-300">Proyecto</p>
-            <IconOutup className="size-6 text-gray-300" />
+          <div className="absolute right-3 justify-center items-center border border-green-700 p-2 rounded-xl flex  bg-gradient-to-br from-green-500/5 to-zinc-900">
+            <IconOutup className="size-7 text-green-700" />
           </div>
         </div>
       </div>

@@ -36,9 +36,9 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section className=' relative px-4 mt-10 max-w-[1000px] mx-auto'>
+    <section className=' relative px-4 my-20 max-w-[1000px] mx-auto'>
         <h2 className="text-3xl lg:text-4xl font-bold font-inter text-green-700 text-center">Experiencia Laboral</h2>
-        <div className="relative border-l-4 border-slate-700 max-w-3xl mx-auto mt-8">
+        <div className="relative border-l-4 border-slate-700 max-w-3xl mx-auto mt-12">
         {experienceData.map((exp) => (
           <div key={exp.id} className="relative mb-8 pl-8">
             <div className="absolute w-4 h-4 bg-green-700 border-2 border-green-800 rounded-full left-[-10px] top-5"></div>
