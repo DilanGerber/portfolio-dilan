@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
@@ -19,18 +19,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
+      className={`transition-all duration-300 z-50 px-6 py-4 md:w-[750px] lg:w-[1010px]  left-1/2 -translate-x-1/2 ${
         isAtTop
-          ? "absolute bg-transparent text-white" // En la sección Hero
-          : "sticky bg-slate-400 bg-opacity-95 shadow-md text-black" // En otras secciones
+          ? "absolute top-0 bg-transparent text-white" // En Hero, sigue el flujo sin ocupar espacio
+          : "fixed top-0 bg-zinc-400/30 backdrop-blur-lg rounded-b-xl shadow-md" // En otras secciones, se fija
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-4 py-4 flex justify-between items-center font-inter ">
+      <div className="flex justify-between items-center font-inter">
         <h1 className="text-2xl font-bold">GD</h1>
         <ul className="flex gap-4">
-          <li>Inicio</li>
           <li>Experiencia</li>
           <li>Proyectos</li>
+          <li>Habilidades</li>
+          <li>Sobre mí</li>
         </ul>
       </div>
     </nav>

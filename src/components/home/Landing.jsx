@@ -8,7 +8,7 @@ import IconCV from '@/icons/IconCV'
 
 const Landing = () => {
   return (
-    <section id="hero" className=' relative px-4 grid max-w-[1000px] mx-auto md:grid-cols-2 mb-20 md:mb-0 md:h-screen'>
+    <section id="hero" className=' relative px-4 grid max-w-[1000px] mx-auto md:grid-cols-2 mb-20 mt-20 md:mt-0 md:mb-0 md:h-screen'>
         <div className='flex flex-col justify-center '>
             <h1 className="text-3xl lg:text-4xl font-bold font-inter">¡Hola! Soy <span className=' text-green-700' aria-label="Dilan Gerber">Dilan Gerber</span>, Desarrollador Web</h1>
             <p className="text-lg font-light max-w-xl mx-auto mt-4">
