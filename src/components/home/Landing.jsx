@@ -8,7 +8,7 @@ import IconCV from '@/icons/IconCV'
 
 const Landing = () => {
   return (
-    <section id="hero" className=' relative px-4 grid max-w-[1000px] mx-auto md:grid-cols-2 mb-20 mt-20 md:mt-0 md:mb-0 md:h-screen'>
+    <section id="hero" className=' relative px-4 grid max-w-[1000px] mx-auto md:grid-cols-2 mb-20 mt-20 lg:mt-0 lg:mb-0 lg:h-screen'>
         <div className='flex flex-col justify-center '>
             <h1 className="text-3xl lg:text-4xl font-bold font-inter">¡Hola! Soy <span className=' text-green-700' aria-label="Dilan Gerber">Dilan Gerber</span>, Desarrollador Web</h1>
             <p className="text-lg font-light max-w-xl mx-auto mt-4">
@@ -53,6 +53,7 @@ const Landing = () => {
                     rel="noopener noreferrer" 
                     className="py-2 px-4  border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
                     aria-label="LinkedIn de Dilan Gerber"
+                    translate="no"
                 >
                     <IconMail className="size-6" /> Copiar Email
                 </a>

@@ -60,7 +60,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between items-center font-inter">
-        <h1 className="text-2xl font-bold">GD</h1>
+        <h1 className="text-2xl font-bold">DG</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-4">
