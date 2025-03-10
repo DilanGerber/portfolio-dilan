@@ -14,7 +14,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className="p-2 bg-gray-200 dark:bg-gray-800 rounded"
+      className="p-2 bg-gray-200 dark:bg-gray-800 rounded absolute top-4 left-4"
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
       {currentTheme === "dark" ? "☀️ Light" : "🌙 Dark"}
