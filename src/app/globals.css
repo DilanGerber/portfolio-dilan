@@ -6,14 +6,6 @@ html {
   @apply bg-zinc-900 text-zinc-50;
 }
 
-.dark {
-  @apply bg-zinc-900 text-zinc-50;
-}
-
-.light {
-  @apply bg-zinc-50 text-zinc-900;
-}
-
 @layer utilities {
   .paused {
     animation-play-state: paused;
