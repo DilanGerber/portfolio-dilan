@@ -27,11 +27,11 @@ const AboutMe = () => {
             </div>
             <div className=' flex justify-center items-center '>
                 <div className="border border-green-800 w-full sm:w-[350px] rounded-xl flex justify-center items-center flex-col gap-5 p-10 bg-gradient-to-br from-green-500/10 to-zinc-900 hover:from-green-500/20 hover:border-green-700 " >
-                    <a href='mailto:dilangerber@gmail.com' target="_blank" className='flex justify-start items-center gap-3 transition-transform duration-300 hover:scale-105'>
+                    <a href='mailto:dilangerber@gmail.com' aria-label="Email de Dilan Gerber" target="_blank" className='flex justify-start items-center gap-3 transition-transform duration-300 hover:scale-105'>
                         <IconMail className='size-6 text-red-600' />
                         <span className='font-inter text-lg'>dilangerber@gmail.com</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/dilangerber" target="_blank" className='flex justify-start items-center gap-3 transition-transform duration-300 hover:scale-105'>
+                    <a href="https://www.linkedin.com/in/dilangerber" aria-label="LinkedIn de Dilan Gerber" target="_blank" className='flex justify-start items-center gap-3 transition-transform duration-300 hover:scale-105'>
                         <IconLinkedin className='size-6 text-blue-600' />
                         <span className='font-inter text-lg'>Dilan Gerber</span>
                     </a>

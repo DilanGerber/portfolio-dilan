@@ -96,7 +96,7 @@ const Skills = () => {
             </div>
         </div>
       </div>
-      <h3 className="text-lg lg:text-2xl font-bold font-inter text-gray-200 text-center my-12">Habilidades técnicas adicionales</h3>
+      <h3 className="text-lg lg:text-2xl font-bold font-inter text-gray-200 text-center mt-12 mb-4">Habilidades técnicas adicionales</h3>
       <SkillsSlider />
     </section>
   )

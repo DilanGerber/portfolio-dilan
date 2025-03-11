@@ -5,7 +5,7 @@ import { technologyIcons } from '@/lib/technologyIcons';
 
 const SkillsSlider = () => {
   return (
-    <div className="flex flex-col space-y-16 overflow-hidden mask-gradient">
+    <div className="flex flex-col space-y-16 overflow-hidden mask-gradient py-16 bg-[radial-gradient(ellipse_at_center,_#111817_60%,_#111218)]">
     {/* Slider hacia la izquierda */}
     <div className="flex space-x-16 overflow-hidden group  ">
       <div className="flex space-x-16 animate-loop-scroll group-hover:paused ">

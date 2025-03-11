@@ -22,7 +22,10 @@ const Navbar = () => {
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
+        if (
+          rect.top <= window.innerHeight * 0.4 &&
+          rect.bottom >= window.innerHeight * 0.4
+        ) {
           currentSection = section.id;
         }
       });
@@ -43,6 +46,14 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleSmoothScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => setActiveSection(id), 100);
+    }
+  };
 
   const sections = [
     { id: "experience", name: "Experiencia" },
@@ -66,8 +77,8 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-4">
           {sections.map(({ id, name }) => (
             <li key={id}>
-              <a
-                href={`#${id}`}
+              <button
+                onClick={() => handleSmoothScroll(id)}
                 className={`relative px-3 py-1 text-lg transition-all duration-300 ${
                   activeSection === id
                     ? "text-green-500"
@@ -82,7 +93,7 @@ const Navbar = () => {
                       : "bg-zinc-100 scale-x-0"
                   }`}
                 ></span>
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -104,15 +115,12 @@ const Navbar = () => {
         }`}
       >
         {sections.map(({ id, name }) => (
-          <a
+          <button
             key={id}
-            href={`#${id}`}
+            onClick={() => handleSmoothScroll(id)}
             className={`relative w-full py-4 px-6 text-lg transition-all duration-300 ${
               activeSection === id ? "text-green-500" : "text-zinc-100 hover:text-green-400"
             }`}
-            onClick={() => {
-              setTimeout(() => setActiveSection(id), 100);
-            }}
           >
             {name}
             <span
@@ -120,11 +128,11 @@ const Navbar = () => {
                 activeSection === id ? "bg-green-500 scale-x-110" : "bg-zinc-100 scale-x-0"
               }`}
             ></span>
-          </a>
+          </button>
         ))}
       </div>
     </nav>
   );
 };
 
-export default Navbar
+export default Navbar;
