@@ -14,26 +14,29 @@ const AboutMe = () => {
             Destaco mi disciplina y constancia para aprender de manera independiente, siempre buscando superarme y no conformarme con lo que ya domino. Disfruto especialmente trabajando en el backend, construyendo APIs REST robustas y escalables, aunque también tengo habilidad y gusto por crear interfaces modernas y funcionales, como se puede apreciar en mis proyectos.
         </p>
         <div className=' grid md:grid-cols-2 mt-8 gap-8'>
-            <div className=' flex justify-center items-center'>
-                <div className=' size-[300px] border-2 border-green-800 rounded-full overflow-hidden relative transition-all duration-300 group 
-        before:absolute before:inset-0 before:rounded-full 
-        before:transition-all before:duration-300 
-        hover:before:bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.6)_25%,_transparent_60%)] 
-        hover:border-green-500 hover:shadow-[0_0_30px_5px_rgba(34,197,94,0.5)]'>
-            
-                <Image 
-                      src="/assets/Dilan-Gerber-Image-3.webp" 
-                      alt="Dilan Gerber" 
-                      width={200} // Define un tamaño realista
-                      height={200} 
-                      sizes="(max-width: 768px) 300px, (max-width: 1024px) 450px, 900px" 
-                      className="object-cover w-full h-full transition-all duration-300 group-hover:scale-105" 
-                      priority={false} 
-                      loading="lazy"
-                    //   placeholder="blur"
-                    //   blurDataURL="/assets/Dilan-Gerber-Image-5-blur.webp"
-                />
-                </div>
+            <div className=' flex justify-center items-center relative'>
+            <div
+  className="size-[300px] border-2 border-green-800 rounded-full overflow-hidden 
+  relative transition-all duration-300 group 
+  before:absolute before:inset-0 before:rounded-full 
+  before:transition-all before:duration-300 
+  hover:before:bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.6)_25%,_transparent_60%)] 
+  hover:border-green-500 hover:shadow-[0_0_30px_5px_rgba(34,197,94,0.5)]"
+>
+  {/* Div de carga */}
+  <div className="absolute inset-0 bg-gray-300 animate-pulse -z-10"></div>
+
+  {/* Imagen */}
+  <Image
+    src="/assets/Dilan-Gerber-Image-3.webp"
+    alt="Dilan Gerber"
+    fill
+    quality={75}
+    sizes="(max-width: 768px) 300px, (max-width: 1024px) 335px, 900px" // Aquí ajustamos para asegurar buena calidad
+    className="object-cover transition-all duration-300 group-hover:scale-105 z-0"
+    loading="lazy"
+  />
+</div>
             </div>
             <div className=' flex justify-center items-center '>
                 <div className="border border-green-800 w-full sm:w-[350px] rounded-xl flex justify-center items-center flex-col gap-5 p-10 bg-gradient-to-br from-green-500/10 to-zinc-900 hover:from-green-500/20 hover:border-green-700 " >
