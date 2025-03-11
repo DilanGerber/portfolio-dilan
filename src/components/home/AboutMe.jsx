@@ -15,13 +15,21 @@ const AboutMe = () => {
         </p>
         <div className=' grid md:grid-cols-2 mt-8 gap-8'>
             <div className=' flex justify-center items-center'>
-                <div className=' size-[300px] border-2 border-green-800 hover:border-green-500 rounded-full overflow-hidden'>
+                <div className=' size-[300px] border-2 border-green-800 rounded-full overflow-hidden relative transition-all duration-300 group 
+        before:absolute before:inset-0 before:rounded-full 
+        before:transition-all before:duration-300 
+        hover:before:bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.6)_25%,_transparent_60%)] 
+        hover:border-green-500 hover:shadow-[0_0_30px_5px_rgba(34,197,94,0.5)]'>
                 <Image 
                     src='/assets/Dilan-Gerber-Image-3.webp' 
                     alt='Dilan Gerber' 
-                    width={1080} 
-                    height={1080} 
-                    className=' object-cover w-full h-full' 
+                    width={300} 
+                    height={300} 
+                    className=' object-cover w-full h-full transition-all duration-300 group-hover:scale-105' 
+                    priority={false} // No la carga de inmediato
+                    loading="lazy"  // Asegura que el navegador la cargue en diferido
+                    placeholder="blur" // Opcional: Pre-carga con un desenfoque (si la imagen está optimizada en `next.config.js`)
+                    blurDataURL="/assets/Dilan-Gerber-Image-5-blur.webp" // Usa una versión ligera como placeholder
                 />
                 </div>
             </div>

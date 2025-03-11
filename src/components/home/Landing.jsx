@@ -59,15 +59,27 @@ const Landing = () => {
                 </a>
             </div>
         </div>
-        <div className=' relative flex justify-center md:justify-end items-center'>
-            <Image
-                src='/assets/Dilan-Gerber-image.webp' 
-                alt='Dilan Gerber' 
-                width={1080} 
-                height={1080} 
-                className=' object-contain size-[350px]' 
-            />
-        </div>
+        <div className="relative flex justify-center md:justify-end items-center mt-12 md:mt-0">
+      <div
+        className="size-[300px] md:size-[335px] border-2 border-green-800 rounded-full overflow-hidden 
+        relative transition-all duration-300 group 
+        before:absolute before:inset-0 before:rounded-full 
+        before:transition-all before:duration-300 
+        hover:before:bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.6)_25%,_transparent_60%)] 
+        hover:border-green-500 hover:shadow-[0_0_30px_5px_rgba(34,197,94,0.5)]"
+      >
+        <Image
+          src="/assets/Dilan-Gerber-Image-5.webp"
+          alt="Dilan Gerber"
+          fill
+          className="object-contain transition-all duration-300 group-hover:scale-105"
+          priority={false} // No la carga de inmediato
+          loading="lazy"  // Asegura que el navegador la cargue en diferido
+          placeholder="blur" // Opcional: Pre-carga con un desenfoque (si la imagen está optimizada en `next.config.js`)
+          blurDataURL="/assets/Dilan-Gerber-Image-5-blur.webp" // Usa una versión ligera como placeholder
+        />
+      </div>
+    </div>
     </section>
   )
 }
