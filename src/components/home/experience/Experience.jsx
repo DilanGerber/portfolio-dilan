@@ -1,7 +1,3 @@
-import IconDownload from '@/icons/IconDownload'
-import IconGitHub from '@/icons/IconGitHub';
-import LogoCoworkVictoria from '@/logos/LogoCoworkVictoria';
-import LogoVidaVerde from '@/logos/LogoVidaVerde';
 import React from 'react'
 import Image from "next/image";
 
