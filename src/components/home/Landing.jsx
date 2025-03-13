@@ -3,8 +3,8 @@ import React from 'react'
 import IconGitHub from '../../icons/IconGitHub'
 import IconLinkedin from '../../icons/IconLinkedin'
 import IconLocation from '../../icons/IconLocation'
-import IconMail from '../../icons/IconMail'
 import IconCV from '@/icons/IconCV'
+import CopyMailButton from '../ui/CopyMailButton'
 
 const Landing = () => {
   return (
@@ -38,25 +38,15 @@ const Landing = () => {
                     <IconLinkedin className="size-6" />
                 </a>
                 <a 
-                    href="https://linkedin.com/in/dilangerber" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                    href="/CV_Dilan_Gerber.pdf" // Ruta al archivo PDF en la carpeta pública
+                    download="CV_Dilan_Gerber.pdf" // Nombre del archivo al descargar
                     className="lg:py-2 lg:px-4 p-2 border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
-                    aria-label="LinkedIn de Dilan Gerber"
+                    aria-label="Descargar CV de Dilan Gerber"
                 >
                     <IconCV className="size-6" />
                     <span className="hidden lg:block">Descargar CV</span>
                 </a>
-                <a 
-                    href="https://linkedin.com/in/dilangerber" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="py-2 px-4  border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
-                    aria-label="LinkedIn de Dilan Gerber"
-                    translate="no"
-                >
-                    <IconMail className="size-6" /> Copiar Email
-                </a>
+                <CopyMailButton /> 
             </div>
         </div>
         <div className="relative flex justify-center md:justify-end items-center mt-12 md:mt-0">
