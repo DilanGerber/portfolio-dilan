@@ -6,6 +6,7 @@ const projectData = [
   {
     id: 1,
     title: "Cowork Victoria",
+    slug: "cowork-victoria",
     description: "Plataforma web desarrollada a medida con sistema de reservas por calendario,  autenticación con JWT, pagos virtuales, dashboard y API REST para datos dinámicos.",
     image: "/assets/Dilan-Gerber-image.webp",
     tecnologies: [
@@ -17,12 +18,13 @@ const projectData = [
       "MongoDB",
       "Tailwind CSS"
     ],
-    link: "/",
+    link: "/projects/cowork-victoria",
     urlProject: "https://coworkvictoria.com/"
   },
   {
     id: 2,
     title: "Vida Verde",
+    slug: "vida-verde",
     description: "Web para un emprendimiento ecológico en Bolivia, enfocado en reforestación y productos biodegradables. Diseñé la UI/UX, animaciones y sliders personalizados.",
     image: "/assets/Dilan-Gerber-image.webp",
     tecnologies: [
@@ -32,12 +34,13 @@ const projectData = [
       "Tailwind CSS",
       "Framer Motion"
     ],
-    link: "/",
-    urlProject: "https://coworkvictoria.com/"
+    link: "/projects/vida-verde",
+    urlProject: "https://vida-verde-bolivia.vercel.app"
   },
   {
     id: 3,
     title: "Room",
+    slug: "room",
     description: "Página web inmobiliaria desarrollada en equipo, con API REST para reseñas, usuarios y departamentos. Incluye autenticación, pagos, filtros y un dashboard para administración.",
     image: "/assets/Dilan-Gerber-image.webp",
     tecnologies: [
@@ -49,18 +52,19 @@ const projectData = [
       "MongoDB",
       "Tailwind CSS"
     ],
-    link: "/",
+    link: "/projects/room",
     urlProject: "https://coworkvictoria.com/"
   },
   {
     id: 4,
     title: "Mi Otro Proyecto",
+    slug: "my-project",
     description: "Sistema de Reservas con pasarela de pagos, metodos de verificación de disponibilidad de fechas y horarios, autentificación de usuarios, dashboard para administración.",
     image: "/assets/Dilan-Gerber-image.webp",
     tecnologies: [
       "Python"
     ],
-    link: "/",
+    link: "/projects/my-project",
     urlProject: "https://coworkvictoria.com/"
   },
 ];
