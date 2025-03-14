@@ -8,7 +8,7 @@ const projectData = [
     title: "Cowork Victoria",
     slug: "cowork-victoria",
     description: "Plataforma web desarrollada a medida con sistema de reservas por calendario,  autenticación con JWT, pagos virtuales, dashboard y API REST para datos dinámicos.",
-    image: "/assets/Dilan-Gerber-image.webp",
+    image: "/assets/asset.png",
     tecnologies: [
       // "JavaScript",
       "React",
@@ -26,7 +26,7 @@ const projectData = [
     title: "Vida Verde",
     slug: "vida-verde",
     description: "Web para un emprendimiento ecológico en Bolivia, enfocado en reforestación y productos biodegradables. Diseñé la UI/UX, animaciones y sliders personalizados.",
-    image: "/assets/Dilan-Gerber-image.webp",
+    image: "/assets/asset.png",
     tecnologies: [
       // "JavaScript",
       "React",

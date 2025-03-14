@@ -67,7 +67,7 @@ const Navbar = () => {
       className={`transition-all duration-300 z-50 px-6 py-4 w-full md:w-[750px] lg:w-[1010px] xl:w-[1150px] left-1/2 -translate-x-1/2 ${
         isAtTop
           ? "absolute top-0 bg-transparent text-white"
-          : "fixed top-0 bg-zinc-400/30 backdrop-blur-lg rounded-b-xl shadow-md"
+          : "fixed top-0 bg-zinc-400/30 backdrop-blur-md rounded-b-xl shadow-md"
       }`}
     >
       <div className="flex justify-between items-center font-inter">

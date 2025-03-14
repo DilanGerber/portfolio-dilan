@@ -13,13 +13,13 @@ const CardProjects = ({ image, title, description, tecnologies, link }) => {
       
       <div className="relative w-full h-full bg-zinc-925 rounded-2xl z-10 p-2 sm:p-3">
       {/* Imagen del proyecto */}
-      <div className="relative w-full h-[300px] rounded-3xl overflow-hidden ">
+      <div className="relative w-full h-[300px]  overflow-hidden ">
         <Image 
           src={image} 
           alt={title} 
           width={500} 
           height={300} 
-          className="object-cover w-full h-full rounded-3xl"
+          className="object-cover w-full h-full rounded-xl"
         />
       </div>
 
