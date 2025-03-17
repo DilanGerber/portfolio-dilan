@@ -41,7 +41,7 @@ const Experience = () => {
   return (
     <section id="experience" className="relative px-4 mt-20 mb-20 max-w-[1000px] mx-auto">
       {/* Título */}
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-inter text-green-700 text-center">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-inter text-zinc-100 text-center">
         Experiencia Laboral
       </h2>
 
