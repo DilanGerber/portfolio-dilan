@@ -11,7 +11,7 @@ const projectsData = [
       title: "Cowork Victoria",
       slug: "cowork-victoria",
       description: "Plataforma web desarrollada a medida con sistema de reservas por calendario,  autenticación con JWT, pagos virtuales, dashboard y API REST para datos dinámicos.",
-      image: "/assets/Dilan-Gerber-Image-5.webp",
+      image: "/assets/CardProject-1.webp",
       tecnologies: [
         // "JavaScript",
         "React",
@@ -38,17 +38,18 @@ const projectsData = [
         "Cloudinary",
       ],
       descriptionTags: [
-        "Desarrollé una plataforma web moderna y optimizada para Vide Verde Bolivia, un emprendimiento dedicado a productos biodegradables y la promoción de la conciencia ambiental. Utilicé Next.js como framework principal, combinado con Tailwind CSS para diseñar una interfaz de usuario (UI) responsiva y visualmente atractiva. Implementé animaciones fluidas y dinámicas con Framer Motion, mejorando la experiencia del usuario y haciendo que la navegación fuera más interactiva.",
-        "La web no es un e-commerce, sino un espacio informativo que muestra los productos y redirige a los usuarios a WhatsApp para realizar compras. Creé sliders personalizados y componentes reutilizables para presentar información e imágenes de manera ordenada y atractiva. Me enfoqué en optimizar el rendimiento, reduciendo los tiempos de carga mediante la optimización de imágenes, videos y componentes.",
-        "Además, diseñé propuestas de UI/UX en Figma, presentándolas al cliente y adaptándome a sus necesidades. Este proyecto, aunque sencillo, demostró mi capacidad para crear soluciones web completas, desde el diseño hasta la implementación técnica, con un enfoque en la usabilidad y el rendimiento."
-      ]
+        "Creé un sistema automatizado de reservas que sustituyó procesos manuales, ofreciendo una solución profesional y escalable. Usé Next.js como framework principal y diseñé una interfaz moderna e intuitiva con Tailwind.",
+        "En el backend, desarrollé una API con Node.js y Express para gestionar reservas, autenticación, pagos y administración de oficinas, utilizando MongoDB como base de datos. La autenticación se realizó con Auth.js, permitiendo el registro e inicio de sesión mediante Google, Facebook (OAuth2) y credenciales propias. Los usuarios reciben un token JWT para asignar roles y gestionar permisos de forma segura.",
+        "El dashboard para administradores permite crear, modificar o eliminar oficinas (Cloudinary para imágenes), bloquear fechas, enviar correos automatizados o personalizados (NodeMailer) y visualizar métricas de uso."
+      ],
+      detailImage: '/assets/ProjectsDetail-1.webp'
     },
     {
       id: 2,
       title: "Vida Verde",
       slug: "vida-verde",
       description: "Web para un emprendimiento ecológico en Bolivia, enfocado en reforestación y productos biodegradables. Diseñé la UI/UX, animaciones y sliders personalizados.",
-      image: "/assets/asset.png",
+      image: "/assets/CardProject-2.webp",
       tecnologies: [
         // "JavaScript",
         "React",
@@ -68,17 +69,18 @@ const projectsData = [
         "Framer Motion"
       ],
       descriptionTags: [
-        "Creé un sistema automatizado de reservas que sustituyó procesos manuales, ofreciendo una solución profesional y escalable. Usé Next.js como framework principal y diseñé una interfaz moderna e intuitiva con Tailwind.",
-        "En el backend, desarrollé una API con Node.js y Express para gestionar reservas, autenticación, pagos y administración de oficinas, utilizando MongoDB como base de datos. La autenticación se realizó con Auth.js, permitiendo el registro e inicio de sesión mediante Google, Facebook (OAuth2) y credenciales propias. Los usuarios reciben un token JWT para asignar roles y gestionar permisos de forma segura.",
-        "El dashboard para administradores permite crear, modificar o eliminar oficinas (Cloudinary para imágenes), bloquear fechas, enviar correos automatizados o personalizados (NodeMailer) y visualizar métricas de uso."
-      ]
+        "Desarrollé una plataforma web para Vide Verde Bolivia, un emprendimiento de productos biodegradables. Usé Next.js para la estructura, Tailwind CSS para diseñar una UI moderna y responsiva, y Framer Motion para animaciones dinámicas. La web, enfocada en conciencia ambiental, muestra productos y redirige a WhatsApp para compras.",
+        "Creé sliders personalizados y componentes reutilizables para presentar información e imágenes de manera interactiva. Optimicé el rendimiento, mejorando la carga de imágenes y videos. Diseñé propuestas de UI/UX en Figma, adaptándome a las necesidades del cliente.",
+        "Diseñé propuestas de UI/UX en Figma, presentándolas al cliente y adaptándome a sus necesidades. Este proyecto, aunque sencillo, demostró mi capacidad para crear soluciones web enfocadas en la usabilidad y el rendimiento."
+      ],
+      detailImage: '/assets/ProjectsDetail-2.webp'
     },
     {
       id: 3,
       title: "Room",
       slug: "room",
       description: "Página web inmobiliaria desarrollada en equipo, con API REST para reseñas, usuarios y departamentos. Incluye autenticación, pagos, filtros y un dashboard para administración.",
-      image: "/assets/Dilan-Gerber-image.webp",
+      image: "/assets/CardProject-3.webp",
       tecnologies: [
         // "JavaScript",
         "React",
@@ -107,14 +109,15 @@ const projectsData = [
         "Desarrollé, en colaboración con un equipo de 7 personas, una aplicación web para la venta de departamentos. La plataforma permite a los usuarios explorar propiedades disponibles, crear cuentas (mediante registro manual o autenticación con Google), dejar comentarios y realizar compras de manera segura.",
         "Mi rol fue especialmente relevante en el backend, donde implementé la lógica de negocio y la integración de una pasarela de pagos con Stripe.",
         "La aplicación fue construida con tecnologías como ReactJS (frontend), Redux Toolkit para la gestión del estado, NodeJS y ExpressJS (backend), y MongoDB con Mongo Atlas para la base de datos y Firebase para la autentificación. Este proyecto me permitió desarrollar habilidades clave como trabajo en equipo, liderazgo y organización de tareas."
-      ]
+      ],
+      detailImage: '/assets/ProjectsDetail-3.webp'
     },
     {
       id: 4,
       title: "Mi Otro Proyecto",
       slug: "my-project",
       description: "Sistema de Reservas con pasarela de pagos, metodos de verificación de disponibilidad de fechas y horarios, autentificación de usuarios, dashboard para administración.",
-      image: "/assets/Dilan-Gerber-image.webp",
+      image: "/assets/CardProject-4.webp",
       tecnologies: [
         "Python"
       ],
@@ -138,7 +141,8 @@ const projectsData = [
         "Creé un sistema automatizado de reservas que sustituyó procesos manuales, ofreciendo una solución profesional y escalable. Usé Next.js como framework principal y diseñé una interfaz moderna e intuitiva con Tailwind.",
         "En el backend, desarrollé una API con Node.js y Express para gestionar reservas, autenticación, pagos y administración de oficinas, utilizando MongoDB como base de datos. La autenticación se realizó con Auth.js, permitiendo el registro e inicio de sesión mediante Google, Facebook (OAuth2) y credenciales propias. Los usuarios reciben un token JWT para asignar roles y gestionar permisos de forma segura.",
         "El dashboard para administradores permite crear, modificar o eliminar oficinas (Cloudinary para imágenes), bloquear fechas, enviar correos automatizados o personalizados (NodeMailer) y visualizar métricas de uso."
-      ]
+      ],
+      detailImage: '/assets/ProjectsDetail-4.webp'
     },
 ];
 
@@ -183,7 +187,7 @@ export const generateStaticParams = async () =>
             {/* Columna Izquierda */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
               <Image
-                src={project.image}
+                src={project.detailImage}
                 alt={project.title}
                 width={800}
                 height={450}
