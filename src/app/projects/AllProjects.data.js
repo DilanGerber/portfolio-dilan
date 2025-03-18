@@ -1,4 +1,4 @@
-const projectData = [
+const projectsData = [
     {
       id: 1,
       title: "Cowork Victoria",
@@ -137,6 +137,6 @@ const projectData = [
       ],
       detailImage: '/assets/ProjectsDetail-4.webp'
     },
-  ];
+];
 
-export default projectData
+export default projectsData
