@@ -44,7 +44,7 @@ const Landing = () => {
                     aria-label="Descargar CV de Dilan Gerber"
                 >
                     <IconCV className="size-6" />
-                    <span className="hidden lg:block">Descargar CV</span>
+                    <span className="hidden font-bold lg:block">Descargar CV</span>
                 </a>
                 <CopyMailButton /> 
             </div>

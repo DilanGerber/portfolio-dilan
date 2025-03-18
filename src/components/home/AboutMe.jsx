@@ -1,3 +1,4 @@
+import IconAboutMe from '@/icons/IconAboutMe'
 import IconLinkedin from '@/icons/IconLinkedin'
 import IconMail from '@/icons/IconMail'
 import Image from 'next/image'
@@ -6,7 +7,10 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <section id='about-me' className=' relative px-4 my-20 max-w-[1000px] mx-auto '>
-        <h2 className="text-3xl lg:text-4xl font-bold font-inter text-zinc-100 text-center my-8">Sobre Mí</h2>
+      <h2 className=" font-inter text-zinc-100 flex flex-row gap-3 justify-center items-center">
+        <span className='text-2xl sm:text-3xl lg:text-4xl font-bold'>Sobre Mí</span> 
+        <IconAboutMe className=' size-7 sm:size-8 lg:size-9' />
+      </h2>
         <p className=" font-inter text-sm md:text-lg text-gray-300 mt-2">
             Tengo 21 años y me introduje al desarrollo web con "Argentina Programa", un curso que realicé junto a mi padrastro, y que luego complementé con un bootcamp. Allí adquirí habilidades como el trabajo en equipo, resolver y afrontar problemas de forma eficiente y la aplicación de buenas prácticas para escribir código limpio y mantenible. Sin embargo, la mayor parte de mi conocimiento y experiencia proviene de mi dedicación autodidacta, explorando nuevas tecnologías y construyendo proyectos por mi cuenta.
         </p>

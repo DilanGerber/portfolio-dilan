@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import IconBriefcase from '@/icons/IconBriefcase';
 
 const experienceData = [
 {
@@ -41,8 +42,9 @@ const Experience = () => {
   return (
     <section id="experience" className="relative px-4 mt-20 mb-20 max-w-[1000px] mx-auto">
       {/* Título */}
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-inter text-zinc-100 text-center">
-        Experiencia Laboral
+      <h2 className=" font-inter text-zinc-100 flex flex-row gap-2 justify-center items-center">
+        <span className='text-2xl sm:text-3xl lg:text-4xl font-bold'>Experiencia Laboral</span> 
+        <IconBriefcase className=' size-8 sm:size-10 lg:size-12' />
       </h2>
 
       {/* Lista de experiencias */}
