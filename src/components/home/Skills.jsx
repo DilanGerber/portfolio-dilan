@@ -5,6 +5,9 @@ import { technologyIcons } from '@/lib/technologyIcons';
 import React from 'react'
 import SkillsSlider from '../ui/SkillsSlider';
 import IconAbility from '@/icons/IconAbility';
+import IconCode from '@/icons/IconCode';
+import IconEnergy from '@/icons/IconEnergy';
+import IconLock from '@/icons/IconLock';
 
 const mainTechnologies = ["Next.js", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"];
 
@@ -31,7 +34,7 @@ const Skills = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
           <div className="relative z-10 text-white">
             <div className="flex items-center gap-3">
-              <IconDownload className="text-green-400 w-7 h-7" />
+              <IconCode className="text-green-400 w-7 h-7" />
               <h2 className=" text-2xl md:text-xl lg:text-2xl text-nowrap font-bold">Diseño UI/UX</h2>
             </div>
             <p className="text-gray-300 mt-2">
@@ -43,7 +46,7 @@ const Skills = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
           <div className="relative z-10 text-white">
             <div className="flex items-center gap-3">
-              <IconBriefcase className="text-green-400 w-7 h-7" />
+              <IconEnergy className="text-green-400 w-7 h-7" />
               <h2 className=" text-2xl md:text-xl  lg:text-2xl font-bold">Web Performance</h2>
             </div>
             <p className="text-gray-300 mt-2">
@@ -55,7 +58,7 @@ const Skills = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 to-green-500/60 blur-2xl opacity-40 transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 group-hover:opacity-80"></div>
           <div className="relative z-10 text-white">
             <div className="flex items-center gap-3">
-              <IconCV className="text-green-400 w-7 h-7" />
+              <IconLock className="text-green-400 w-7 h-7" />
               <h2 className=" text-2xl md:text-xl lg:text-2xl font-bold">Seguridad</h2>
             </div>
             <p className="text-gray-300 mt-2">

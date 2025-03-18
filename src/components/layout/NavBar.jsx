@@ -1,20 +1,24 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import IconClose from "@/icons/IconClose";
 import IconMenu from "@/icons/IconMenu";
+import IconHome from "@/icons/IconHome";
+import IconLayer from "@/icons/IconLayer";
 
 const Navbar = () => {
   const [isAtTop, setIsAtTop] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const menuRef = useRef(null);
+  const pathname = usePathname(); // Obtiene la ruta actual
 
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById("hero");
       if (heroSection) {
-        const heroBottom = heroSection.offsetHeight;
-        setIsAtTop(window.scrollY < heroBottom);
+        setIsAtTop(window.scrollY < heroSection.offsetHeight);
       }
 
       const sections = document.querySelectorAll("section");
@@ -55,11 +59,18 @@ const Navbar = () => {
     }
   };
 
-  const sections = [
+  // Secciones para la vista de inicio
+  const homeSections = [
     { id: "experience", name: "Experiencia" },
     { id: "projects", name: "Proyectos" },
     { id: "skills", name: "Habilidades" },
     { id: "about-me", name: "Sobre Mí" },
+  ];
+
+  // Menú reducido para otras páginas
+  const otherSections = [
+    { href: "/", name: "Inicio", icon: <IconHome className="size-6" /> },
+    { href: "/projects", name: "Proyectos", icon: <IconLayer className="size-6" /> },
   ];
 
   return (
@@ -73,66 +84,92 @@ const Navbar = () => {
       <div className="flex justify-between items-center font-inter">
         <h1 className="text-2xl font-bold">DG</h1>
 
-        {/* Desktop Menu */}
+        {/* Menú para Desktop */}
         <ul className="hidden md:flex gap-4">
-          {sections.map(({ id, name }) => (
-            <li key={id}>
-              <button
-                onClick={() => handleSmoothScroll(id)}
-                className={`relative px-3 py-1 text-lg transition-all duration-300 ${
-                  activeSection === id
-                    ? "text-green-500"
-                    : "text-zinc-100 hover:text-green-400"
-                }`}
-              >
-                {name}
-                <span
-                  className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] w-[80%] transition-all duration-300 ${
+          {pathname === "/" ? (
+            homeSections.map(({ id, name }) => (
+              <li key={id}>
+                <button
+                  onClick={() => handleSmoothScroll(id)}
+                  className={`relative px-3 py-1 text-lg transition-all duration-300 ${
                     activeSection === id
-                      ? "bg-green-500 scale-x-100"
-                      : "bg-zinc-100 scale-x-0"
+                      ? "text-green-500"
+                      : "text-zinc-100 hover:text-green-400"
                   }`}
-                ></span>
-              </button>
-            </li>
-          ))}
+                >
+                  {name}
+                  <span
+                    className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] w-[80%] transition-all duration-300 ${
+                      activeSection === id
+                        ? "bg-green-500 scale-x-100"
+                        : "bg-zinc-100 scale-x-0"
+                    }`}
+                  ></span>
+                </button>
+              </li>
+            ))
+          ) : (
+            otherSections.map(({ href, name, icon }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="flex items-center gap-2 px-3 py-1 text-lg text-zinc-100 hover:text-green-400 transition-all duration-300"
+                >
+                  {icon} {name}
+                </Link>
+              </li>
+            ))
+          )}
         </ul>
 
-        {/* Mobile Menu Icon */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-        >
+        {/* Icono de menú para móviles */}
+        <button className="md:hidden" onClick={() => setIsMenuOpen((prev) => !prev)}>
           {isMenuOpen ? <IconClose className="size-8" /> : <IconMenu className="size-8" />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menú móvil */}
       <div
         ref={menuRef}
         className={`absolute w-[200px] top-14 right-3 rounded-xl bg-zinc-800 text-zinc-100 flex flex-col items-start py-2 md:hidden border border-green-500 transition-all duration-500 ${
           isMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
-        {sections.map(({ id, name }) => (
-          <button
-            key={id}
-            onClick={() => handleSmoothScroll(id)}
-            className={`relative w-full py-4 px-6 text-lg transition-all duration-300 ${
-              activeSection === id ? "text-green-500" : "text-zinc-100 hover:text-green-400"
-            }`}
-          >
-            {name}
-            <span
-              className={`absolute left-6 bottom-2 w-[80%] h-[2px] transition-all duration-300 ${
-                activeSection === id ? "bg-green-500 scale-x-110" : "bg-zinc-100 scale-x-0"
+        {pathname === "/" ? (
+          homeSections.map(({ id, name }) => (
+            <button
+              key={id}
+              onClick={() => {
+                handleSmoothScroll(id);
+                setIsMenuOpen(false);
+              }}
+              className={`relative w-full py-4 px-6 text-lg transition-all duration-300 ${
+                activeSection === id ? "text-green-500" : "text-zinc-100 hover:text-green-400"
               }`}
-            ></span>
-          </button>
-        ))}
+            >
+              {name}
+              <span
+                className={`absolute left-6 bottom-2 w-[80%] h-[2px] transition-all duration-300 ${
+                  activeSection === id ? "bg-green-500 scale-x-110" : "bg-zinc-100 scale-x-0"
+                }`}
+              ></span>
+            </button>
+          ))
+        ) : (
+          otherSections.map(({ href, name, icon }) => (
+            <Link
+              key={href}
+              href={href}
+              className="flex items-center gap-3 w-full py-4 px-6 text-lg text-zinc-100 hover:text-green-400 transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {icon} {name}
+            </Link>
+          ))
+        )}
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
