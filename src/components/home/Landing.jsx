@@ -66,17 +66,19 @@ const Landing = () => {
           {/* Placeholder de carga más eficiente */}
           <div className="absolute inset-0 bg-gray-300 animate-pulse z-[-1]"></div>
           
-          <Image
-            src="/assets/Dilan-Gerber-1.webp"
-            alt="Dilan Gerber"
-            fill
-            quality={75}
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover transition-all duration-300 group-hover:scale-105"
-            priority
-            placeholder="blur"
-            blurDataURL="/assets/Dilan-Gerber-1-blur.webp" 
-          />
+<Image
+  src="/assets/Dilan-Gerber-1.webp"
+  alt="Dilan Gerber"
+  width={333}
+  height={300}
+  quality={75}
+  sizes="(max-width: 480px) 50vw, (max-width: 768px) 60vw, (max-width: 1024px) 50vw, 33vw"
+  className="object-cover transition-all duration-300 group-hover:scale-105"
+  priority
+  fetchPriority="high"
+  placeholder="blur"
+  blurDataURL="/assets/Dilan-Gerber-1-blur.webp"
+/>
         </div>
       </div>
     </section>
