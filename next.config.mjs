@@ -9,6 +9,11 @@ const nextConfig = {
           },
         ],
     },
+    modularizeImports: {
+      "date-fns": {
+        transform: "date-fns/{{member}}",
+      },
+    },
 };
 
 export default nextConfig;
