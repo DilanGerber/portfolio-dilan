@@ -66,7 +66,8 @@ const Landing = () => {
             quality={75}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-all duration-300 group-hover:scale-105"
-            />
+            loading='eager'
+          />
       </div>
     </div>
     </section>
