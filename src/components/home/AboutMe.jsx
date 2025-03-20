@@ -36,7 +36,7 @@ const AboutMe = () => {
     alt="Dilan Gerber"
     fill
     quality={75}
-    sizes="(max-width: 768px) 300px, (max-width: 1024px) 335px, 900px" // Aquí ajustamos para asegurar buena calidad
+    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
     className="object-cover transition-all duration-300 group-hover:scale-105 z-0"
     loading="lazy"
   />

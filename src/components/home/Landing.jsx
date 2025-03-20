@@ -64,11 +64,8 @@ const Landing = () => {
             alt="Dilan Gerber"
             fill
             quality={75}
-            sizes="(max-width: 768px) 300px, (max-width: 1024px) 335px"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-all duration-300 group-hover:scale-105"
-             // La imagen principal se carga antes
-            // placeholder="blur"
-            // blurDataURL="/assets/Dilan-Gerber-Image-5-blur.webp"
             />
       </div>
     </div>
