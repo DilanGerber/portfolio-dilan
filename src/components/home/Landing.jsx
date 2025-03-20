@@ -62,13 +62,14 @@ const Landing = () => {
           <Image
             src="/assets/Dilan-Gerber-1.webp"
             alt="Dilan Gerber"
-            width={331} // Tamaño real del contenedor
-            height={331}
+            width={600} // Establecer ancho fijo
+            height={600} // Establecer alto fijo
             quality={75}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-all duration-300 group-hover:scale-105"
-            // loading='eager'
+            loading='eager'
             format="webp"
+            priority
           />
       </div>
     </div>
