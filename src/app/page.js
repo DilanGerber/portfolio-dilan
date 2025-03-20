@@ -4,13 +4,11 @@ import Landing from "@/components/home/Landing";
 import Projects from "@/components/home/projects/Projects";
 import Skills from "@/components/home/Skills";
 import StartButton from "@/components/layout/StartButton";
-import ThemeSwitcher from "@/components/theme/ThemeSwitcher";
 import GitHubActivity from "@/components/ui/GitHubActivity";
 
 export default function Home() {
   return (
-    <div className=" ">
-      {/* <ThemeSwitcher/> */}
+    <main>
       <Landing />
       <Experience />
       <Projects />
@@ -18,6 +16,6 @@ export default function Home() {
       <GitHubActivity />
       <AboutMe />
       <StartButton />
-    </div>
+    </main>
   );
 }

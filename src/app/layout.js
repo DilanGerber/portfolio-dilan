@@ -1,4 +1,3 @@
-import ThemeProvider from "@/components/theme/ThemeProvider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { inter } from "@/lib/fonts";
@@ -26,11 +25,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.variable}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <Navbar />
+        <Navbar />
           {children}
-          <Footer />
-        </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );
