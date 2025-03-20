@@ -51,7 +51,7 @@ const Landing = () => {
         </div>
         <div className="relative flex justify-center md:justify-end items-center mt-12 md:mt-0">
       <div
-        className="size-[300px] md:size-[335px] border-2 border-green-800 rounded-full overflow-hidden 
+        className="size-[300px] md:size-[335px] border-2 border-green-600 rounded-full overflow-hidden 
         relative transition-all duration-300 group 
         before:absolute before:inset-0 before:rounded-full 
         before:transition-all before:duration-300 
@@ -60,7 +60,7 @@ const Landing = () => {
       >
         {/* <div className="absolute inset-0 bg-gray-300 animate-pulse"></div> */}
           <Image
-            src="/assets/Dilan-Gerber-Image-5.webp"
+            src="/assets/Dilan-Gerber-1.webp"
             alt="Dilan Gerber"
             width={331} // Tamaño real del contenedor
             height={331}
