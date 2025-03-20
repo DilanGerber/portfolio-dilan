@@ -23,7 +23,7 @@ const Landing = () => {
                     href="https://github.com/dilangerber" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="p-2  border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors"
+                    className="p-2  border-2 border-green-600 rounded-full text-green-600 hover:bg-green-800 hover:text-white transition-colors"
                     aria-label="GitHub de Dilan Gerber"
                 >
                     <IconGitHub className="size-6" />
@@ -32,7 +32,7 @@ const Landing = () => {
                     href="https://linkedin.com/in/dilangerber" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="p-2  border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors"
+                    className="p-2  border-2 border-green-600 rounded-full text-green-600 hover:bg-green-800 hover:text-white transition-colors"
                     aria-label="LinkedIn de Dilan Gerber"
                 >
                     <IconLinkedin className="size-6" />
@@ -40,7 +40,7 @@ const Landing = () => {
                 <a 
                     href="/CV_Dilan_Gerber.pdf" // Ruta al archivo PDF en la carpeta pública
                     download="CV_Dilan_Gerber.pdf" // Nombre del archivo al descargar
-                    className="lg:py-2 lg:px-4 p-2 border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
+                    className="lg:py-2 lg:px-4 p-2 border-2 border-green-600 rounded-full text-green-600 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
                     aria-label="Descargar CV de Dilan Gerber"
                 >
                     <IconCV className="size-6" />

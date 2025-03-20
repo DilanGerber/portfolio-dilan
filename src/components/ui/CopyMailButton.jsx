@@ -21,7 +21,7 @@ const CopyMailButton = () => {
   return (
       <button
         onClick={handleCopyEmail}
-        className="py-2 px-4 border-2 border-green-700 rounded-full text-green-700 hover:bg-green-800 hover:text-white font-bold transition-colors flex flex-row gap-3 whitespace-nowrap"
+        className="py-2 px-4 border-2 border-green-600 rounded-full text-green-600 hover:bg-green-800 hover:text-white font-bold transition-colors flex flex-row gap-3 whitespace-nowrap"
         aria-label="Copiar email de Dilan Gerber"
         translate="no"
       >

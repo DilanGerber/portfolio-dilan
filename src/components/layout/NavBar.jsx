@@ -123,7 +123,7 @@ const Navbar = () => {
         </ul>
 
         {/* Icono de menú para móviles */}
-        <button className="md:hidden" onClick={() => setIsMenuOpen((prev) => !prev)}>
+        <button className="md:hidden" onClick={() => setIsMenuOpen((prev) => !prev)} aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={isMenuOpen}>
           {isMenuOpen ? <IconClose className="size-8" /> : <IconMenu className="size-8" />}
         </button>
       </div>
