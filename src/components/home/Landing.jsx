@@ -58,12 +58,11 @@ const Landing = () => {
         hover:before:bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.6)_25%,_transparent_60%)] 
         hover:border-green-500 hover:shadow-[0_0_30px_5px_rgba(34,197,94,0.5)]"
       >
-        {/* <div className="absolute inset-0 bg-gray-300 animate-pulse"></div> */}
+        <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
           <Image
             src="/assets/Dilan-Gerber-1.webp"
             alt="Dilan Gerber"
-            width={600} // Establecer ancho fijo
-            height={600} // Establecer alto fijo
+            fill
             quality={75}
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-all duration-300 group-hover:scale-105"
