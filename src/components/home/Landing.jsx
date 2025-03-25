@@ -41,8 +41,8 @@ const Landing = () => {
             <IconLinkedin className="size-6" />
           </a>
           <a
-            href="/CV_Dilan_Gerber.pdf"
-            download="CV_Dilan_Gerber.pdf"
+            href="/CV-DilanGerber.pdf"
+            download="CV-DilanGerber.pdf"
             className="lg:py-2 lg:px-4 p-2 border-2 border-green-600 rounded-full text-green-600 hover:bg-green-800 hover:text-white transition-colors flex flex-row gap-3 whitespace-nowrap"
             aria-label="Descargar CV de Dilan Gerber"
           >
