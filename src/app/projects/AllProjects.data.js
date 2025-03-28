@@ -72,7 +72,7 @@ const projectsData = [
       id: 3,
       title: "Room",
       slug: "room",
-      description: "Página web inmobiliaria desarrollada en equipo, con API REST para reseñas, usuarios y departamentos. Incluye autenticación, pagos, filtros y un dashboard para administración.",
+      description: "Página web inmobiliaria desarrollada en equipo, con API REST para usuarios y departamentos. Incluye autenticación, pagos, filtros y un dashboard para administración.",
       image: "/assets/CardProject-3.webp",
       tecnologies: [
         // "JavaScript",
@@ -107,9 +107,9 @@ const projectsData = [
     },
     {
       id: 4,
-      title: "Mi Portafolio",
+      title: "Mí Portafolio",
       slug: "my-portfolio",
-      description: "Sistema de Reservas con pasarela de pagos, metodos de verificación de disponibilidad de fechas y horarios, autentificación de usuarios, dashboard para administración.",
+      description: "Espacio donde muestro mi trabajo, experiencia, proyectos, habilidades. Con atención al detalle, navegación intuitiva y experiencias digitales fluidas y modernas.",
       image: "/assets/CardProject-4.webp",
       tecnologies: [
         "Next.js",
@@ -128,9 +128,8 @@ const projectsData = [
         "Framer Motion"
       ],
       descriptionTags: [
-        "Creé un sistema automatizado de reservas que sustituyó procesos manuales, ofreciendo una solución profesional y escalable. Usé Next.js como framework principal y diseñé una interfaz moderna e intuitiva con Tailwind.",
-        "En el backend, desarrollé una API con Node.js y Express para gestionar reservas, autenticación, pagos y administración de oficinas, utilizando MongoDB como base de datos. La autenticación se realizó con Auth.js, permitiendo el registro e inicio de sesión mediante Google, Facebook (OAuth2) y credenciales propias. Los usuarios reciben un token JWT para asignar roles y gestionar permisos de forma segura.",
-        "El dashboard para administradores permite crear, modificar o eliminar oficinas (Cloudinary para imágenes), bloquear fechas, enviar correos automatizados o personalizados (NodeMailer) y visualizar métricas de uso."
+        "Mi portafolio representa mi evolución como desarrollador y seguirá creciendo junto con mi carrera, incorporando nuevas tecnologías y mejores prácticas a medida que avance en este campo. Es más que una simple colección de proyectos; es una demostración tangible de mi pasión por el desarrollo web y mi dedicación a crear soluciones técnicas elegantes y efectivas.",
+        "Para garantizar el mejor rendimiento posible, implementé técnicas avanzadas como lazy loading para imágenes, optimización de componentes y división de código. Permitieron lograr puntuaciones en herramientas de análisis como PageSpeed los 100 puntos en las métricas clave. El diseño, ofrece una interfaz limpia y moderna que se adapta perfectamente a cualquier dispositivo, demostrando mi dominio de los principios del diseño responsive.",
       ],
       detailImage: '/assets/ProjectsDetail-4.webp'
     },
