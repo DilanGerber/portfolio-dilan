@@ -107,28 +107,25 @@ const projectsData = [
     },
     {
       id: 4,
-      title: "Mi Otro Proyecto",
-      slug: "my-project",
+      title: "Mi Portafolio",
+      slug: "my-portfolio",
       description: "Sistema de Reservas con pasarela de pagos, metodos de verificación de disponibilidad de fechas y horarios, autentificación de usuarios, dashboard para administración.",
       image: "/assets/CardProject-4.webp",
       tecnologies: [
-        "Python"
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion"
       ],
-      link: "/projects/my-project",
+      link: "/projects/my-portfolio",
       urlProject: "https://portfolio-dilan.vercel.app/",
       source: "https://github.com/DilanGerber/portfolio-dilan",
       project: "Sistema de Reservas y Gestión",
       fullTecnologies: [
+        "JavaScript",
         "React",
         "Next.js",
-        "Node.js",
-        "Express",
-        "MongoDB",
         "Tailwind CSS",
-        "Auth.js",
-        "JWT",
-        "Nodemailer",
-        "Cloudinary",
+        "Framer Motion"
       ],
       descriptionTags: [
         "Creé un sistema automatizado de reservas que sustituyó procesos manuales, ofreciendo una solución profesional y escalable. Usé Next.js como framework principal y diseñé una interfaz moderna e intuitiva con Tailwind.",
