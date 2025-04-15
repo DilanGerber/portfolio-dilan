@@ -107,19 +107,20 @@ const projectData = [
     },
     {
       id: 4,
-      title: "Mí Portafolio",
-      slug: "my-portfolio",
-      description: "Espacio donde muestro mi trabajo, experiencia, proyectos, habilidades. Con atención al detalle, navegación intuitiva y experiencias digitales fluidas y modernas.",
-      image: "/assets/CardProject-4.webp",
+      title: "Manticore Technologies",
+      slug: "manticoretech",
+      description: "Refactorización completa de sitio web corporativo con enfoque en rendimiento, accesibilidad y diseño responsive. Integración de animaciones y optimización.",
+      image: "/assets/CardProject-5.webp",
       tecnologies: [
+        "React",
         "Next.js",
         "Tailwind CSS",
-        "Framer Motion"
+        "Framer Motion",
       ],
-      link: "/projects/my-portfolio",
-      urlProject: "https://portfolio-dilan.vercel.app/",
-      source: "https://github.com/DilanGerber/portfolio-dilan",
-      project: "Sistema de Reservas y Gestión",
+      link: "/projects/manticoretech",
+      urlProject: "https://manticoretech.org",
+      source: false,
+      project: "Sitio Corporativo que ofrece soluciones tecnológicas.",
       fullTecnologies: [
         "JavaScript",
         "React",
@@ -128,10 +129,11 @@ const projectData = [
         "Framer Motion"
       ],
       descriptionTags: [
-        "Mi portafolio representa mi evolución como desarrollador y seguirá creciendo junto con mi carrera, incorporando nuevas tecnologías y mejores prácticas a medida que avance en este campo. Es más que una simple colección de proyectos; es una demostración tangible de mi pasión por el desarrollo web y mi dedicación a crear soluciones técnicas elegantes y efectivas.",
-        "Para garantizar el mejor rendimiento posible, implementé técnicas avanzadas como lazy loading para imágenes, optimización de componentes y división de código. Permitieron lograr puntuaciones en herramientas de análisis como PageSpeed los 100 puntos en las métricas clave. El diseño, ofrece una interfaz limpia y moderna que se adapta perfectamente a cualquier dispositivo, demostrando mi dominio de los principios del diseño responsive.",
+        "Migré y refactoricé un sitio construido en WordPress y Elementor a una arquitectura moderna con Next.js, priorizando rendimiento, personalización visual, experiencia de usuario y generando mayor escalabilidad a toda la estructura del proyecto. Mejoré la velocidad de carga y logré un diseño atractivo y responsive.",
+        "Implementé animaciones fluidas con Framer Motion, sliders dinámicos y layouts completamente adaptables para todos los dispositivos. Optimizando imágenes y estructura, alcancé un 95/100 en móviles y 100/100 en desktop según PageSpeed mejorando el rendimiento y accesibilidad.",
+        "Apliqué una estética UI inspirada en Blade Runner según los requerimientos del cliente, combinando efectos futuristas, fuentes minimalistas y una navegación envolvente que refuerza la identidad visual de la empresa tecnológica."
       ],
-      detailImage: '/assets/ProjectsDetail-4.webp'
+      detailImage: "/assets/ProjectsDetail-5.webp"
     },
   ];
 

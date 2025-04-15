@@ -133,6 +133,36 @@ const projectsData = [
       ],
       detailImage: '/assets/ProjectsDetail-4.webp'
     },
+    {
+      id: 5,
+      title: "Manticore Technologies",
+      slug: "manticoretech",
+      description: "Refactorización completa de sitio web corporativo con enfoque en rendimiento, accesibilidad y diseño responsive. Integración de animaciones y optimización.",
+      image: "/assets/CardProject-5.webp",
+      tecnologies: [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion",
+      ],
+      link: "/projects/manticoretech",
+      urlProject: "https://manticoretech.org",
+      source: false,
+      project: "Sitio Corporativo que ofrece soluciones tecnológicas.",
+      fullTecnologies: [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
+      descriptionTags: [
+        "Migré y refactoricé un sitio construido en WordPress y Elementor a una arquitectura moderna con Next.js, priorizando rendimiento, personalización visual, experiencia de usuario y generando mayor escalabilidad a toda la estructura del proyecto. Mejoré la velocidad de carga y logré un diseño atractivo y responsive.",
+        "Implementé animaciones fluidas con Framer Motion, sliders dinámicos y layouts completamente adaptables para todos los dispositivos. Optimizando imágenes y estructura, alcancé un 95/100 en móviles y 100/100 en desktop según PageSpeed mejorando el rendimiento y accesibilidad.",
+        "Apliqué una estética UI inspirada en Blade Runner según los requerimientos del cliente, combinando efectos futuristas, fuentes minimalistas y una navegación envolvente que refuerza la identidad visual de la empresa tecnológica."
+      ],
+      detailImage: "/assets/ProjectsDetail-5.webp"
+    },    
 ];
 
 export default projectsData
