@@ -3,6 +3,7 @@ import "./globals.css";
 import { inter } from "@/lib/fonts";
 import Navbar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
+import HeaderTemplates from "@/components/layout/HeaderTemplates";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.variable}`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
+        <HeaderTemplates />
           {children}
         <Footer />
       </body>

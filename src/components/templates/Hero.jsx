@@ -1,29 +1,30 @@
-"use client"
+"use client";
 
-import React from 'react'
-import IconAbility from "@/icons/IconAbility";
-import { Canvas } from '@react-three/fiber';
-import { Box, OrbitControls } from "@react-three/drei";
-import MacbookModel from '../ui-templates/Macbook';
-import StudioLights from '../ui-templates/StudioLights';
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import MacbookModel from "../ui-templates/Macbook";
+import StudioLights from "../ui-templates/StudioLights";
 
 const Hero = () => {
   return (
-    <section className="relative px-4 max-w-[1200px] mx-auto mt-20 mb-24">
-      <h2 className="font-inter text-zinc-100 flex flex-row gap-2 justify-center items-center mb-12">
-        <span className="text-2xl sm:text-3xl lg:text-4xl font-bold">
-          Elige un diseño y adáptalo a tu negocio
-        </span>
+    <section id="templates" className="relative overflow-hidden py-44 " >
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-2 items-center gap-10">
+          {/* Texto */}
 
-        <IconAbility className="size-6 sm:size-8 lg:size-10" />
-      </h2>
+          <div className="space-y-8 z-50">
+            <h1 className="font-inter font-bold text-5xl lg:text-5xl leading-tight text-zinc-100">
+              Elige un diseño y <br /> <span className=" bg-gradient-to-r block text-transparent from-green-500 to-green-800 bg-clip-text">adáptalo a tu negocio</span> 
+            </h1>
 
-      <p className="text-lg font-light max-w-xl mx-auto mt-4 text-center text-zinc-400">
-        Cada template es un punto de partida. Personalízalo, añade las
-        funcionalidades que necesites y deja que nosotros hagamos el resto.
-      </p>
+            <p className="text-zinc-400 text-lg max-w-lg leading-8">
+              Cada template es un punto de partida. Personalízalo, añade las
+        funcionalidades que necesites y deja que nosotros nos encargamos del desarrollo, optimización y
+              lanzamiento.
+            </p>
 
-      <div className="flex flex-col sm:flex-row gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
 
   {/* Botón principal */}
 
@@ -46,8 +47,8 @@ const Hero = () => {
       transition-all
       duration-300
 
-      hover:scale-[1.03]
-      hover:shadow-[0_0_25px_rgba(34,197,94,.35)]
+      hover:scale-[1.05]
+      hover:shadow-[0_0_25px_rgba(34,197,94,.85)]
     "
   >
     {/* Glow */}
@@ -135,18 +136,20 @@ const Hero = () => {
       text-zinc-200
 
       border
-      border-zinc-700
+      border-green-500
 
-      bg-zinc-950/50
+      bg-green-950/30
 
-      backdrop-blur-sm
+      backdrop-blur-xl
 
       transition-all
       duration-300
 
+      hover:scale-[1.05]
+
       hover:border-green-500
       hover:text-white
-      hover:shadow-[0_0_20px_rgba(34,197,94,.2)]
+      hover:shadow-[0_0_80px_rgba(34,197,94,.2)]
     "
   >
     {/* Barrido */}
@@ -156,7 +159,7 @@ const Hero = () => {
         absolute
         inset-0
 
-        bg-[linear-gradient(120deg,transparent_15%,rgba(34,197,94,.20)_50%,transparent_85%)]
+        bg-[linear-gradient(120deg,transparent_15%,rgba(34,197,94,.40)_50%,transparent_85%)]
 
         bg-[length:400%]
 
@@ -198,17 +201,58 @@ const Hero = () => {
     </span>
   </button>
 
-</div>
+            </div>
 
-      <div>
-        <Canvas id='canvas' camera={{position: [0, 2, 5], fov: 50, near: 0.1, far: 100}}>
-            <StudioLights />
-            <MacbookModel scale={0.12} position={[0, 0, 0]} />
-            <OrbitControls enableZoom={false} />
-        </Canvas>  
-      </div> 
+            
+
+            <div className="flex items-center gap-4">
+
+  <div className="flex -space-x-3">
+
+    <div className="w-9 h-9 rounded-full bg-zinc-700 border-2 border-zinc-900" />
+    <div className="w-9 h-9 rounded-full bg-zinc-600 border-2 border-zinc-900" />
+    <div className="w-9 h-9 rounded-full bg-zinc-500 border-2 border-zinc-900" />
+
+  </div>
+
+  <p className="text-sm text-zinc-400">
+    Más de <span className="text-white font-semibold">20 templates</span> listos para personalizar.
+  </p>
+
+</div>
+            
+          </div>
+
+          {/* Canvas */}
+
+          <div className="absolute h-[350px] md:h-[500px] lg:h-[700px] w-[140%] -ml-16 mt-64">
+            <Canvas
+              camera={{
+                position: [0, 1.3, 5],
+                fov: 30,
+              }}
+            >
+              <StudioLights />
+
+              <MacbookModel
+                scale={0.06}
+                position={[0, 0, 0]}
+              />
+
+              <OrbitControls
+                enableZoom={false}
+                enablePan={false}
+                minPolarAngle={Math.PI / 2.3}
+                maxPolarAngle={Math.PI / 2.3}
+                minAzimuthAngle={-0.4}
+                maxAzimuthAngle={0.4}
+              />
+            </Canvas>
+          </div>
+        </div>
+      </div>
     </section>
-  )
-} 
+  );
+};
 
 export default Hero
