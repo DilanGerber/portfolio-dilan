@@ -5,10 +5,26 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import MacbookModel from "../ui-templates/Macbook";
 import StudioLights from "../ui-templates/StudioLights";
+import SideRays from "../ui-templates/SideRays";
 
 const Hero = () => {
   return (
-    <section id="templates" className="relative overflow-hidden py-44 " >
+    <section id="templates" className="relative overflow-hidden py-36 " >
+          <div className="absolute inset-0 -z-10 pointer-events-none">
+    <SideRays
+      origin="bottom-right"
+      speed={3.8}
+      rayColor1="#166534"
+      rayColor2="#14B973"
+      intensity={2}
+      spread={2.5}
+      tilt={1}
+      saturation={1.5}
+      blend={2.25}
+      falloff={1.6}
+      opacity={0.8}
+    />
+  </div>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 items-center gap-10">
           {/* Texto */}
@@ -203,23 +219,47 @@ const Hero = () => {
 
             </div>
 
-            
-
             <div className="flex items-center gap-4">
 
-  <div className="flex -space-x-3">
+  <div className="flex flex-wrap items-center gap-6 pt-3">
 
-    <div className="w-9 h-9 rounded-full bg-zinc-700 border-2 border-zinc-900" />
-    <div className="w-9 h-9 rounded-full bg-zinc-600 border-2 border-zinc-900" />
-    <div className="w-9 h-9 rounded-full bg-zinc-500 border-2 border-zinc-900" />
-
+  <div className="flex flex-col">
+    <span className="text-2xl font-bold text-green-400">4+</span>
+    <span className="text-sm text-zinc-500">
+      Templates
+    </span>
   </div>
 
-  <p className="text-sm text-zinc-400">
-    Más de <span className="text-white font-semibold">20 templates</span> listos para personalizar.
-  </p>
+  <div className="w-px h-10 bg-zinc-700" />
+
+  <div className="flex flex-col">
+    <span className="text-2xl font-bold text-green-400">3</span>
+    <span className="text-sm text-zinc-500">
+      Nichos
+    </span>
+  </div>
+
+  <div className="w-px h-10 bg-zinc-700" />
+
+  <div className="flex flex-col">
+    <span className="text-2xl font-bold text-green-400">2</span>
+    <span className="text-sm text-zinc-500">
+      Estilos
+    </span>
+  </div>
+
+  <div className="w-px h-10 bg-zinc-700" />
+
+  <div className="flex flex-col">
+    <span className="text-2xl font-bold text-green-400">∞</span>
+    <span className="text-sm text-zinc-500">
+      Personalización
+    </span>
+  </div>
 
 </div>
+
+            </div>
             
           </div>
 
