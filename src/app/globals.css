@@ -57,3 +57,13 @@ html::before {
 .github-calendar-container {
   direction: ltr; /* Permite que el contenido dentro del div se vea normal */
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 350%;
+  }
+}

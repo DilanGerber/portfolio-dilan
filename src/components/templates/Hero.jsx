@@ -6,6 +6,7 @@ import { OrbitControls } from "@react-three/drei";
 import MacbookModel from "../ui-templates/Macbook";
 import StudioLights from "../ui-templates/StudioLights";
 import SideRays from "../ui-templates/SideRays";
+import AutoOrbit from "../ui-templates/AutoOrbit";
 
 const Hero = () => {
   return (
@@ -31,8 +32,24 @@ const Hero = () => {
 
           <div className="space-y-8 z-50">
             <h1 className="font-inter font-bold text-5xl lg:text-5xl leading-tight text-zinc-100">
-              Elige un diseño y <br /> <span className=" bg-gradient-to-r block text-transparent from-green-500 to-green-800 bg-clip-text">adáptalo a tu negocio</span> 
-            </h1>
+  Elige un diseño y
+  <br />
+
+  <span
+    className="
+      leading-normal
+      text-transparent
+      bg-clip-text
+
+      bg-[linear-gradient(30deg,#22c55e,#16a34a,#4ade80,#16a34a,#22c55e)]
+      bg-[length:250%_100%]
+
+      animate-[gradient_6s_linear_infinite]
+    "
+  >
+    adáptalo a tu negocio
+  </span>
+</h1>
 
             <p className="text-zinc-400 text-lg max-w-lg leading-8">
               Cada template es un punto de partida. Personalízalo, añade las
@@ -279,14 +296,7 @@ const Hero = () => {
                 position={[0, 0, 0]}
               />
 
-              <OrbitControls
-                enableZoom={false}
-                enablePan={false}
-                minPolarAngle={Math.PI / 2.3}
-                maxPolarAngle={Math.PI / 2.3}
-                minAzimuthAngle={-0.4}
-                maxAzimuthAngle={0.4}
-              />
+              <AutoOrbit />
             </Canvas>
           </div>
         </div>
