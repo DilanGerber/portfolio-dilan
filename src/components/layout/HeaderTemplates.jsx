@@ -6,6 +6,8 @@ import IconClose from "@/icons/IconClose";
 import IconMenu from "@/icons/IconMenu";
 import IconHome from "@/icons/IconHome";
 import IconLayer from "@/icons/IconLayer";
+import Image from "next/image";
+import icon0 from "@/app/icon0.svg";
 
 const HeaderTemplates = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -81,8 +83,8 @@ const HeaderTemplates = () => {
       }`}
     >
       <div className="flex justify-between items-center font-inter">
-        <h1 className="text-2xl font-bold">dilangerber</h1>
-        <div className=" absolute bottom-0.5 left-6 flex flex-row items-center text-xs"><span>Ultima vista desde: </span> <span className=" font-semibold">Argentina, Buenos Aires 🇦🇷</span></div>
+        <h1 className="text-2xl font-bold flex gap-2"> <Image src={icon0} alt="Dilan Gerber Logo" width={16} height={16} /> dilangerber</h1>
+        {/* <div className=" absolute bottom-0.5 left-6 flex flex-row items-center text-xs"><span>Ultima vista desde: </span> <span className=" font-semibold">Argentina, Buenos Aires 🇦🇷</span></div> */}
         {/* Menú para Desktop */}
         <ul className="hidden md:flex gap-4">
           {pathname === "/templates" ? (
