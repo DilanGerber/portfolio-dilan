@@ -1,5 +1,5 @@
 import Hero from "@/components/templates/Hero";
-import Product from "@/components/templates/Product";
+import Product from "@/components/templates/Product/Product";
 import React from "react";
 
 const Templates = () => {

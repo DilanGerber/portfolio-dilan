@@ -63,7 +63,7 @@ const HeaderTemplates = () => {
 
   // Secciones para la vista de inicio
   const homeSections = [
-    { id: "experience", name: "Templates" },
+    { id: "product", name: "Templates" },
     { id: "projects", name: "Funciones" },
     { id: "skills", name: "Cómo funciona" }
   ];
@@ -92,7 +92,7 @@ const HeaderTemplates = () => {
               <li key={id}>
                 <button
                   onClick={() => handleSmoothScroll(id)}
-                  className={`relative px-3 py-1 text-base transition-all duration-300 ${
+                  className={`relative px-3 py-1 text-lg transition-all duration-300 ${
                     activeSection === id
                       ? "text-green-500"
                       : "text-zinc-100 hover:text-green-400"
