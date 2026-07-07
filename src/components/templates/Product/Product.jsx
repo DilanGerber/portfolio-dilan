@@ -4,12 +4,13 @@ import React from "react";
 import IconBriefcase from "@/icons/IconBriefcase";
 import templatesData from "./templatesData";
 import TemplateCard from "./TemplateCard";
+import TemplatesCatalog from "./TemplatesCatalog";
 
 const Product = () => {
   return (
     <section
       id="product"
-      className="relative py-36"
+      className="relative py-24"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -38,7 +39,7 @@ const Product = () => {
 
         {/* Grid */}
 
-        <div className="grid md:grid-cols-2 gap-8 mt-20">
+        <div className="grid md:grid-cols-2 gap-8 mt-8">
 
           {templatesData.map((template) => (
             <TemplateCard
@@ -50,8 +51,9 @@ const Product = () => {
         </div>
 
       </div>
+      <TemplatesCatalog />
     </section>
   );
 };
 
-export default Product;    
+export default Product;      

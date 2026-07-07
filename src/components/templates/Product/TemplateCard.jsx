@@ -28,7 +28,7 @@ const TemplateCard = ({ template }) => {
       <div
         className="
         relative
-        aspect-[16/10]
+        aspect-[8/4]
 
         bg-gradient-to-br
         from-zinc-900
@@ -69,7 +69,7 @@ const TemplateCard = ({ template }) => {
           -translate-y-1/2
 
           w-[82%]
-          h-[72%]
+          h-[82%]
 
           rounded-xl
 
@@ -91,7 +91,7 @@ const TemplateCard = ({ template }) => {
 
       {/* Content */}
 
-      <div className="p-7 space-y-5">
+      <div className="p-4 space-y-2">
         <div>
           <h3 className="text-2xl font-semibold text-white">
             {template.name}
@@ -131,7 +131,7 @@ const TemplateCard = ({ template }) => {
         {/* Footer */}
 
         <div className="flex justify-between items-center pt-2">
-          <div>
+          <div className=" flex items-center gap-2">
             <p className="text-zinc-500 text-sm">
               Desde
             </p>
@@ -144,6 +144,7 @@ const TemplateCard = ({ template }) => {
           <button
             className="
             flex
+            flex-row
             items-center
             gap-2
 
@@ -154,8 +155,7 @@ const TemplateCard = ({ template }) => {
             group-hover:gap-3
           "
           >
-            Ver Demo
-
+            <span className=" flex flex-row">Ver Demo</span>
             <IconBriefcase
               size={18}
               className="transition-transform group-hover:rotate-45"
