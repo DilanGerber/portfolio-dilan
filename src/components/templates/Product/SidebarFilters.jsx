@@ -19,10 +19,28 @@ const SidebarFilters = ({
   const niches = [
     "Todos",
     "Marketing",
-    "Cowork",
-    "Portfolio",
     "Dentistas",
     "Inmobiliaria",
+    "Empresas",
+  "Ecommerce",
+  // "Cowork",
+  // "Restaurantes",
+  // "Hoteles",
+  // "Turismo",
+  // "Arquitectos",
+  // "Abogados",
+  // "Médicos",
+  // "Psicólogos",
+  // "Odontólogos",
+  // "Gimnasios",
+  // "Barberías",
+  // "Salones",
+  // "Eventos",
+  // "Coaches",
+  // "SaaS",      
+  // "Startups",
+  // "Portfolio",
+  // "Agencias"
   ];
 
   return (
