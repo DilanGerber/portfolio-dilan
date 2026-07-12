@@ -1,104 +1,177 @@
+"use client";
 
-
-import IconAbility from '@/icons/IconAbility';
-import IconLayer from '@/icons/IconLayer'
-import React from 'react'
+import IconLayer from "@/icons/IconLayer";
 import functionsData from "./functionsData";
+import FunctionCard from "./FunctionCard";
+import OrbitalPreview from "./OrbitalPreview";
 
 const Functions = () => {
   return (
     <section
-      id="function"
-      className="relative py-24"
+      id="functions"
+      className="relative py-24 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className=" font-inter text-zinc-100 flex flex-row gap-3 justify-center items-center text-center">
-          <span className='text-2xl sm:text-3xl lg:text-4xl font-bold'>Construye la web que realmente necesitas</span> 
-          <IconLayer className=' size-6 sm:size-8 lg:size-10' />
-        </h2>
-        <p className=" text-center font-inter text-sm md:text-lg text-gray-300 mt-2 px-64">Empieza con el diseño que más te guste y conviértelo en una web hecha a tu medida. Añade solo las funcionalidades que necesitas hay y sigue ampliandolo en el futuro sin tener que empezar desde cerol</p>
+      {/* Glow de fondo */}
 
-        <div className=' text-center justify-center items-center flex px-64 mt-12'>
-          <div className="
-                    group
-                    rounded-3xl
-                    border
-                    border-zinc-800
-                    bg-zinc-900/60
-                    backdrop-blur-xl
-                    p-4
-                    transition-all
-                    duration-500
-                    hover:-translate-y-2
-                    hover:border-green-500/40
-                    hover:shadow-[0_0_40px_rgba(34,197,94,.12)]
-                  ">Cada funcionalidad se adapta al diseño que elijas. Se integra respetando el estilo visual de tu template para que todo se vea como un solo producto</div>
+      <div
+        className="
+          absolute
+          left-1/2
+          top-72
+          -translate-x-1/2
+
+          w-[400px]
+          h-[400px]
+
+          rounded-full
+
+          bg-green-500/10
+
+          blur-[180px]
+
+          pointer-events-none
+        "
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* Header */}
+
+        <div className="text-center max-w-4xl mx-auto">
+
+          <div className="flex justify-center mb-5">
+            <IconLayer className="size-10 text-green-400" />
+          </div>
+
+          <h2 className=" text-5xl lg:text-5xl font-bold font-inter text-zinc-100 leading-tight">
+
+            Haz{" "}
+
+            <span className="text-green-400">
+              crecer
+            </span>
+
+            {" "}tu web
+
+          </h2>
+
+          <p
+            className="text-center font-inter text-sm md:text-lg text-gray-300 mt-8"
+          >
+            Empieza con el diseño que más te guste y conviértelo en una web
+            hecha a tu medida.
+
+            <br />
+
+            Añade solo las funcionalidades que necesitas hoy y amplía tu
+            proyecto cuando lo necesites, sin tener que empezar desde cero.
+          </p>
+
         </div>
 
-        <div className="grid sm:grid-cols-4 gap-6 mt-12">
-            {functionsData.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={item.title}
-                  className="
-                    group
-                    rounded-3xl
-                    border
-                    border-zinc-800
-                    bg-zinc-900/60
-                    backdrop-blur-xl
-                    p-4
-                    transition-all
-                    duration-500
-                    hover:-translate-y-2
-                    hover:border-green-500/40
-                    hover:shadow-[0_0_40px_rgba(34,197,94,.12)]
-                  "
-                >
+        {/* Preview */}
 
-                  <div
-                    className="
-                      mb-2
-                      inline-flex
-                      rounded-xl
-                      bg-green-500/10
-                      p-2
-                      text-green-400
-                      transition
-                      group-hover:scale-110
-                    "
-                  >
-                    <Icon className="size-6" />
-                  </div>
+        <OrbitalPreview />
 
-                  <h3 className="text-white text-base font-semibold">
-                    {item.title}
-                  </h3>
+        {/* Banner */}
 
-                  <p className="mt-2 text-zinc-400 text-sm">
-                    {item.description}
-                  </p>
+        {/* <div
+          className="
+            mt-16
 
-                  <div className="mt-2 flex items-center gap-2">
+            rounded-3xl
 
-                    <span className="w-2 h-2 rounded-full bg-green-400"/>
+            border
+            border-green-500/20
 
-                    <span className="text-sm text-zinc-500">
-                      Compatible con cualquier template
-                    </span>
+            bg-zinc-900/70
 
-                  </div>
+            backdrop-blur-xl
 
-                </div>
-              );
+            px-10
+            py-8
 
-            })}
+            text-center
+          "
+        >
 
-          </div>
+          <p className="text-white font-semibold text-xl">
+            Todas estas capacidades se integran respetando el estilo visual del
+            diseño que elijas.
+          </p>
+
+          <p className="text-zinc-400 mt-3 leading-8">
+            Cada proyecto es único, pero siempre se ve y funciona como un solo
+            producto.
+          </p>
+
+        </div> */}
+
+        {/* Grid */}
+
+        <div
+          className="
+            mt-8
+
+            grid
+
+            md:grid-cols-2
+
+            xl:grid-cols-4
+
+            gap-8
+          "
+        >
+
+          {functionsData.map((item) => (
+            <FunctionCard
+              key={item.title}
+              item={item}
+            />
+          ))}
+
+        </div>
+
+        {/* CTA */}
+
+        {/* <div
+          className="
+            mt-16
+
+            rounded-3xl
+
+            border
+            border-zinc-800
+
+            bg-zinc-900/70
+
+            backdrop-blur-xl
+
+            px-10
+            py-8
+
+            text-center
+          "
+        >
+
+          <p className="text-lg text-zinc-300 leading-8">
+
+            ¿Necesitas algo más específico?{" "}
+
+            <span className="text-green-400 font-medium">
+              También desarrollamos funcionalidades e integraciones
+              completamente personalizadas
+            </span>
+
+            {" "}para adaptarnos a las necesidades de tu negocio.
+
+          </p>
+
+        </div> */}
+
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Functions
+export default Functions;
