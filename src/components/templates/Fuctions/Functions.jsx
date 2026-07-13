@@ -4,6 +4,7 @@ import IconLayer from "@/icons/IconLayer";
 import functionsData from "./functionsData";
 import FunctionCard from "./FunctionCard";
 import OrbitalPreview from "./OrbitalPreview";
+import IconGitHub from "@/icons/IconGitHub";
 
 const Functions = () => {
   return (
@@ -47,7 +48,16 @@ const Functions = () => {
 
             Haz{" "}
 
-            <span className="text-green-400">
+            <span className="
+                  leading-normal
+                  text-transparent
+                  bg-clip-text
+
+                  bg-[linear-gradient(30deg,#22c55e,#16a34a,#4ade80,#16a34a,#22c55e)]
+                  bg-[length:250%_100%]
+
+                  animate-[gradient_6s_linear_infinite]
+                ">
               crecer
             </span>
 
@@ -73,46 +83,15 @@ const Functions = () => {
 
         <OrbitalPreview />
 
-        {/* Banner */}
-
-        {/* <div
-          className="
-            mt-16
-
-            rounded-3xl
-
-            border
-            border-green-500/20
-
-            bg-zinc-900/70
-
-            backdrop-blur-xl
-
-            px-10
-            py-8
-
-            text-center
-          "
-        >
-
-          <p className="text-white font-semibold text-xl">
-            Todas estas capacidades se integran respetando el estilo visual del
-            diseño que elijas.
-          </p>
-
-          <p className="text-zinc-400 mt-3 leading-8">
-            Cada proyecto es único, pero siempre se ve y funciona como un solo
-            producto.
-          </p>
-
-        </div> */}
-
+        <div className=" flex justify-center items-center mb-16">
+            <p className=" text-zinc-300 flex flex-row items-center text-lg gap-2"> <IconGitHub className=" text-green-400 size-6"/> Todas estas capacidades puedes integrarlas respetando el estilo visual del
+            diseño que elijas.</p>
+        </div>
+        
         {/* Grid */}
 
         <div
           className="
-            
-
             grid
 
             md:grid-cols-2

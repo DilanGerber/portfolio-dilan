@@ -13,18 +13,21 @@ const FunctionCard = ({ item }) => {
         border
         border-zinc-800
 
-        bg-zinc-900/70
+        bg-gradient-to-br
+        from-zinc-900
+        via-zinc-800
+        to-zinc-950
 
         backdrop-blur-xl
 
         p-5
+        
 
         transition-all
-        duration-500
+                  duration-500
 
-        hover:-translate-y-2
-        hover:border-green-500/30
-        hover:shadow-[0_0_40px_rgba(34,197,94,.10)]
+                  hover:-translate-y-2
+                  hover:shadow-[0_0_55px_rgba(34,197,94,.25)]
       "
     >
       {/* Icono */}
