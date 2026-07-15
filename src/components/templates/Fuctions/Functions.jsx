@@ -9,7 +9,7 @@ import IconGitHub from "@/icons/IconGitHub";
 const Functions = () => {
   return (
     <section
-      id="functions"
+      id="function"
       className="relative py-24 overflow-hidden"
     >
       {/* Glow de fondo */}
