@@ -7,7 +7,7 @@ import React from "react";
 const Templates = () => {
   return (
     <main>
-        <Hero />
+        {/* <Hero /> */}
         <Product />
         <Functions />    
         <How_it_works />
