@@ -15,7 +15,7 @@ const Software = () => {
           max-w-7xl
           mx-auto
           px-8
-          py-20
+          py-12
 
           rounded-3xl
 
@@ -30,22 +30,48 @@ const Software = () => {
           overflow-hidden
         "
       >
-        {/* Glow */}
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(34,197,94,.08),transparent_55%)]" />
-
-        <div className="relative grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative grid lg:grid-cols-[40%_60%] gap-16 items-center">
 
           {/* ================= LEFT ================= */}
 
           <div>
 
-            {/* <div className="flex mb-5">
-              <IconCode className="size-10 text-green-400" />
-            </div> */}
+            <div
+              className="
+                w-fit
+
+                rounded-full
+                border
+                border-green-500/20
+
+                bg-green-500/5
+
+                px-3
+                py-1.5
+
+                text-xs
+
+                text-green-300
+
+                flex
+                gap-2
+                items-center
+
+                mb-4
+              "
+            >
+              <IconCode className="size-5 text-green-400" />
+
+              <span>
+                ¿Y si tu proyecto necesita algo más?
+              </span>
+            </div>
+
 
             <h2 className="text-5xl font-bold font-inter text-zinc-100 leading-tight">
-              ¿Tienes unaaa{" "}
+
+              ¿Tienes una{" "}
 
               <span
                 className="
@@ -63,23 +89,32 @@ const Software = () => {
 
             </h2>
 
-            <p className="text-lg text-zinc-300 mt-8 leading-8">
+
+            <p className="text-lg text-zinc-300 mt-4 leading-8">
+
               No todos los proyectos empiezan con una plantilla.
+
               <br />
+
               Algunos comienzan con una conversación.
+
             </p>
 
-            <p className="text-zinc-400 leading-8 mt-8 max-w-xl">
+
+            <p className="text-zinc-400 leading-8 mt-4 max-w-xl">
+
               Si tienes una idea que no encaja en el catálogo, este es el
               espacio para plantearla. Juntos definiremos el alcance del
               proyecto, exploraremos las diferentes posibilidades y
               construiremos una solución pensada exclusivamente para lo que
               imaginas.
+
             </p>
+
 
             <button
               className="
-                mt-10
+                mt-6
 
                 group
                 relative
@@ -103,6 +138,9 @@ const Software = () => {
                 hover:shadow-[0_0_80px_rgba(34,197,94,.18)]
               "
             >
+
+              {/* Efecto de brillo */}
+
               <div
                 className="
                   absolute
@@ -121,18 +159,41 @@ const Software = () => {
                 "
               />
 
+
               <div className="relative flex items-center gap-4">
 
                 <IconCode className="size-8 text-green-400" />
 
+
                 <div className="text-left">
 
                   <div className="font-semibold text-zinc-100 text-lg">
+
                     Cuéntame tu idea
+
                   </div>
 
-                  <div className="text-zinc-400 text-sm">
-                    Agendemos una reunión →
+
+                  <div className="text-zinc-400 text-sm flex items-center gap-1">
+
+                    <span>
+                      Agendemos una reunión
+                    </span>
+
+                    <span
+                      className="
+                        inline-block
+
+                        transition-transform
+                        duration-300
+                        ease-out
+
+                        group-hover:translate-x-1.5
+                      "
+                    >
+                      →
+                    </span>
+
                   </div>
 
                 </div>
@@ -143,167 +204,236 @@ const Software = () => {
 
           </div>
 
+
           {/* ================= RIGHT ================= */}
 
-          <div className="relative flex justify-center items-center h-[520px]">
+          <div
+            className="
+              relative
 
-            {/* Logo */}
+              flex
+              justify-center
+              items-center
 
-            <Image
-              src={icon0}
-              alt="Idea"
-              className="
-                w-[260px]
-                h-auto
+              h-[520px]
 
-                opacity-95
+              w-full
+            "
+          >
 
-                drop-shadow-[0_0_70px_rgba(34,197,94,.20)]
-
-                animate-[pulse_6s_ease-in-out_infinite]
-              "
-            />
-
-            {/* Card 1 */}
+            {/* Zona interna que contiene la gema y las tarjetas */}
 
             <div
               className="
-                absolute
+                relative
 
-                top-8
-                left-0
+                w-[min(100%,500px)]
+                aspect-square
 
-                rounded-2xl
-
-                border
-                border-zinc-700
-
-                bg-zinc-900/80
-
-                backdrop-blur-xl
-
-                px-5
-                py-4
-
-                shadow-xl
-
-                animate-[float_6s_ease-in-out_infinite]
+                flex
+                items-center
+                justify-center
               "
             >
-              <p className="text-green-400 text-sm font-semibold">
-                💡 Comparte tu idea
-              </p>
-            </div>
 
-            {/* Card 2 */}
+              {/* Glow */}
 
-            <div
-              className="
-                absolute
+              <div
+                className="
+                  absolute
+                  inset-[20%]
 
-                top-20
-                right-0
+                  rounded-full
 
-                rounded-2xl
+                  bg-green-500/10
 
-                border
-                border-zinc-700
+                  blur-3xl
+                "
+              />
 
-                bg-zinc-900/80
 
-                backdrop-blur-xl
+              {/* Logo */}
 
-                px-5
-                py-4
+              <Image
+                src={icon0}
+                alt="Idea"
+                className="
+                  relative
+                  z-10
 
-                shadow-xl
+                  w-[52%]
+                  h-auto
 
-                animate-[float_7s_ease-in-out_infinite]
-              "
-            >
-              <p className="text-green-400 text-sm font-semibold">
-                🎯 Definimos objetivos
-              </p>
+                  opacity-95
 
-              <p className="text-zinc-400 text-xs mt-1">
-                y el alcance del proyecto
-              </p>
-            </div>
+                  drop-shadow-[0_0_70px_rgba(34,197,94,.80)]
 
-            {/* Card 3 */}
+                  animate-[pulse_6s_ease-in-out_infinite]
+                "
+              />
 
-            <div
-              className="
-                absolute
 
-                bottom-24
-                left-6
+              {/* ================= CARD 1 ================= */}
 
-                rounded-2xl
+              <div
+                className="
+                  absolute z-20
 
-                border
-                border-zinc-700
+                  top-[15%]
+                  left-[-3%]
 
-                bg-zinc-900/80
+                  rounded-2xl
 
-                backdrop-blur-xl
+                  border
+                  border-zinc-700
 
-                px-5
-                py-4
+                  bg-zinc-900/80
 
-                shadow-xl
+                  backdrop-blur-xl
 
-                animate-[float_5.5s_ease-in-out_infinite]
-              "
-            >
-              <p className="text-green-400 text-sm font-semibold">
-                ⚙️ Exploramos las mejores
-              </p>
+                  px-5
+                  py-4
 
-              <p className="text-zinc-400 text-xs mt-1">
-                posibilidades para tu idea
-              </p>
-            </div>
+                  shadow-xl
 
-            {/* Card 4 */}
+                  whitespace-nowrap
 
-            <div
-              className="
-                absolute
+                  animate-[float_6s_ease-in-out_infinite]
+                "
+              >
+                <p className="text-green-400 text-sm font-semibold">
+                  💡 Comparte tu idea
+                </p>
+              </div>
 
-                bottom-8
-                right-4
 
-                rounded-2xl
+              {/* ================= CARD 2 ================= */}
 
-                border
-                border-green-500/30
+              <div
+                className="
+                  absolute z-20
 
-                bg-green-500/5
+                  top-[28%]
+                  right-[-5%]
 
-                backdrop-blur-xl
+                  rounded-2xl
 
-                px-5
-                py-4
+                  border
+                  border-zinc-700
 
-                shadow-[0_0_30px_rgba(34,197,94,.15)]
+                  bg-zinc-900/80
 
-                animate-[float_6.5s_ease-in-out_infinite]
-              "
-            >
-              <p className="text-green-300 text-sm font-semibold">
-                ✨ Construimos una solución
-              </p>
+                  backdrop-blur-xl
 
-              <p className="text-zinc-300 text-xs mt-1">
-                hecha completamente a tu medida
-              </p>
+                  px-5
+                  py-4
+
+                  shadow-xl
+
+                  whitespace-nowrap
+
+                  animate-[float_7s_ease-in-out_infinite]
+                "
+              >
+
+                <p className="text-green-400 text-sm font-semibold">
+                  🎯 Definimos objetivos
+                </p>
+
+                <p className="text-zinc-400 text-xs mt-1">
+                  y el alcance del proyecto
+                </p>
+
+              </div>
+
+
+              {/* ================= CARD 3 ================= */}
+
+              <div
+                className="
+                  absolute
+z-20
+                  bottom-[20%]
+                  left-[-10%]
+
+                  rounded-2xl
+
+                  border
+                  border-zinc-700
+
+                  bg-zinc-900/80
+
+                  backdrop-blur-xl
+
+                  px-5
+                  py-4
+
+                  shadow-xl
+
+                  whitespace-nowrap
+
+                  animate-[float_5.5s_ease-in-out_infinite]
+                "
+              >
+
+                <p className="text-green-400 text-sm font-semibold">
+                  ⚙️ Exploramos las mejores
+                </p>
+
+                <p className="text-zinc-400 text-xs mt-1">
+                  posibilidades para tu idea
+                </p>
+
+              </div>
+
+
+              {/* ================= CARD 4 ================= */}
+
+              <div
+                className="
+                  absolute
+                    z-20
+                  bottom-[5%]
+                  right-[-5%]
+
+                  rounded-2xl
+
+                  border
+                  border-green-500/30
+
+                  bg-green-500/5
+
+                  backdrop-blur-xl
+
+                  px-5
+                  py-4
+
+                  shadow-[0_0_30px_rgba(34,197,94,.15)]
+
+                  whitespace-nowrap
+
+                  animate-[float_6.5s_ease-in-out_infinite]
+                "
+              >
+
+                <p className="text-green-300 text-sm font-semibold">
+                  ✨ Construimos una solución
+                </p>
+
+                <p className="text-zinc-300 text-xs mt-1">
+                  hecha completamente a tu medida
+                </p>
+
+              </div>
+
             </div>
 
           </div>
 
         </div>
+
       </div>
+
     </section>
   );
 };

@@ -293,9 +293,12 @@ const Hero = () => {
             className="absolute h-[350px] md:h-[500px] lg:h-[700px] w-[140%] -ml-16 mt-64"
           >
             <Canvas
-              camera={{
-                position: [0, 1.3, 5],
-                fov: 30,
+              camera={{ position: [0, 1.3, 5], fov: 30 }}
+              dpr={[1, 1.5]} // limita la resolución de renderizado, sin esto puede usar tu dpr real que en pantallas HiDPI dispara la carga
+              gl={{
+                powerPreference: "default", // en vez de "high-performance", reduce exigencia
+                antialias: true,
+                preserveDrawingBuffer: false,
               }}
             >
               <StudioLights />
