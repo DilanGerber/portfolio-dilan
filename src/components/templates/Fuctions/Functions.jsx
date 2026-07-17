@@ -83,9 +83,33 @@ const Functions = () => {
 
         <OrbitalPreview />
 
-        <div className=" flex justify-center items-center mb-16">
-            <p className=" text-zinc-300 flex flex-row items-center text-lg gap-2"> <IconGitHub className=" text-green-400 size-6"/> Todas estas capacidades puedes integrarlas respetando el estilo visual del
-            diseño que elijas.</p>
+                <div
+          className="
+            my-16
+            flex
+            justify-center
+          "
+        >
+
+          <p
+            className="
+              max-w-3xl
+
+              text-center
+
+              text-zinc-400
+              text-sm
+              md:text-base
+
+              leading-8
+              flex flex-row items-center gap-2
+            "
+          >
+            <IconGitHub className="text-green-400 size-6 flex-shrink-0" />
+            Todas estas capacidades puedes integrarlas respetando el estilo visual del
+            diseño que elijas.
+          </p>
+
         </div>
         
         {/* Grid */}

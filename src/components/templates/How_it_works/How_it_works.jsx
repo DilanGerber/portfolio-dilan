@@ -201,13 +201,34 @@ const How_it_works = () => {
 
         </div>
 
-        <div className="flex justify-center items-center mt-16">
-          <p className="text-zinc-300 flex flex-row items-center text-lg gap-2 text-center max-w-5xl">
+                <div
+          className="
+            mt-20
+            flex
+            justify-center
+          "
+        >
+
+          <p
+            className="
+              max-w-3xl
+
+              text-center
+
+              text-zinc-400
+              text-sm
+              md:text-base
+
+              leading-8
+              flex flex-row items-center gap-2
+            "
+          >
             <IconGitHub className="text-green-400 size-6 flex-shrink-0" />
             No compras una plantilla con funciones cerradas. Empiezas con un
             diseño que evoluciona junto a tu negocio y construimos sobre él
             exactamente lo que necesitas, cuando lo necesitas.
           </p>
+
         </div>
       </div>
     </section>

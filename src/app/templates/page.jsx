@@ -1,3 +1,4 @@
+import FAQs from "@/components/templates/FAQs/FAQs";
 import Functions from "@/components/templates/Fuctions/Functions";
 import Hero from "@/components/templates/Hero";
 import How_it_works from "@/components/templates/How_it_works/How_it_works";
@@ -13,6 +14,7 @@ const Templates = () => {
         <Functions />    
         <How_it_works />
         <Software />
+        <FAQs />
     </main>
   );
 };
