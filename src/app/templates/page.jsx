@@ -1,3 +1,4 @@
+import CTA from "@/components/templates/CTA";
 import FAQs from "@/components/templates/FAQs/FAQs";
 import Functions from "@/components/templates/Fuctions/Functions";
 import Hero from "@/components/templates/Hero";
@@ -15,6 +16,7 @@ const Templates = () => {
         <How_it_works />
         <Software />
         <FAQs />
+        <CTA />
     </main>
   );
 };
