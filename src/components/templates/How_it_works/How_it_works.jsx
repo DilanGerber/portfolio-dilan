@@ -101,12 +101,12 @@ const How_it_works = () => {
           h-full
 
           transition-all
-          duration-300
+          duration-1000
 
           ${
             step.active
               ? "border border-green-500/40 bg-green-500/[0.05] transition-all duration-900 hover:-translate-y-2 hover:shadow-[0_0_75px_rgba(34,197,94,.25)]"
-              : "border border-zinc-700 bg-zinc-900 transition-all duration-900 bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,.12)_50%,transparent_80%)] bg-[length:400%_400%] bg-[position:100%] hover:bg-[position:0%]"
+              : "border border-zinc-700 bg-zinc-900 transition-all duration-[1000ms] bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,.12)_50%,transparent_80%)] bg-[length:400%_400%] bg-[position:100%] hover:bg-[position:0%]"
           }
         `}
       >

@@ -1,3 +1,5 @@
+"use client"
+
 import IconArrowTop from "@/icons/IconArrowTop";
 import IconCode from "@/icons/IconCode";
 import IconEnergy from "@/icons/IconEnergy";
@@ -5,6 +7,16 @@ import IconGitHub from "@/icons/IconGitHub";
 import IconCheck from "@/icons/IconCheck";
 
 const CTA = () => {
+    const handleSmoothScroll = (id) => {
+  const section = document.getElementById(id);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
   return (
     <section
       id="cta"
@@ -30,7 +42,7 @@ const CTA = () => {
             to-zinc-950
 
             px-6
-            py-20
+            py-12
             md:px-12
             lg:px-24
           "
@@ -195,7 +207,7 @@ const CTA = () => {
 
             <div
               className="
-                mt-12
+                mt-8
 
                 grid
                 md:grid-cols-2
@@ -215,10 +227,11 @@ const CTA = () => {
 
                   rounded-3xl
 
-                  border
-                  border-green-500/20
-
-                  bg-zinc-950/60
+                  border-zinc-800
+          bg-gradient-to-b
+          from-zinc-900
+          to-zinc-950
+                    backdrop-blur-xl
 
                   p-6
 
@@ -269,56 +282,80 @@ const CTA = () => {
 
 
                 <button
-                  className="
-                    group/button
-
-                    mt-6
-
-                    flex
+                onClick={() => handleSmoothScroll("product")}
+                className="
+                  group
+                  relative
+                  overflow-hidden
+                  flex
                     w-full
                     items-center
                     justify-center
                     gap-2
 
                     rounded-xl
-
-                    border
-                    border-green-500/40
-
-                    bg-green-500/10
-
-                    px-5
-                    py-3
-
-                    font-semibold
-
-                    text-green-300
-
+                  mt-6
+                  px-5
+                  py-3
+                  font-semibold
+                  text-zinc-200
+                  border
+                  border-green-500
+                  bg-green-950/30
+                  backdrop-blur-xl
+                  transition-all
+                  duration-300
+                  
+                  hover:border-green-500
+                  hover:text-white
+                  hover:shadow-[0_0_80px_rgba(34,197,94,.2)]
+                "
+              >
+                <div
+                  className="
+                    absolute inset-0
+                    bg-[linear-gradient(120deg,transparent_15%,rgba(34,197,94,.40)_50%,transparent_85%)]
+                    bg-[length:400%]
+                    bg-[position:100%]
                     transition-all
-                    duration-300
-
-                    hover:bg-green-500/20
-                    hover:text-green-200
+                    duration-700
+                    group-hover:bg-[position:0%]
                   "
-                >
-                  Solicitar una propuesta
+                />
 
-                  <IconArrowTop
-                    className="
-                      size-5
+                <div
+                  className="
+                    absolute inset-0
+                    blur-3xl
+                    opacity-40
+                    bg-[linear-gradient(120deg,transparent_20%,rgba(34,197,94,.18)_50%,transparent_80%)]
+                    bg-[length:350%]
+                    bg-[position:100%]
+                    transition-all
+                    duration-1000
+                    group-hover:bg-[position:0%]
+                  "
+                />
 
-                      transition-transform
-                      duration-300
+                <span className="relative z-10">
+                  Necesito algo a medida
+                </span>
+                <IconArrowTop
+  className="
+    relative
+    z-10
 
-                      group-hover/button:-translate-y-1
-                      group-hover/button:translate-x-1
-                    "
-                  />
+    size-5
 
-                </button>
+    transition-transform
+    duration-300
+
+    group-hover:-translate-y-1
+  "
+/>
+              </button>
 
               </div>
-
 
               {/* Proyecto personalizado */}
 
@@ -328,10 +365,11 @@ const CTA = () => {
 
                   rounded-3xl
 
-                  border
-                  border-zinc-700
-
-                  bg-zinc-950/60
+                  border-zinc-800
+          bg-gradient-to-b
+          from-zinc-900
+          to-zinc-950
+                    backdrop-blur-xl
 
                   p-6
 
@@ -363,7 +401,7 @@ const CTA = () => {
                       bg-zinc-800
                     "
                   >
-                    <IconCode className="size-5 text-green-400" />
+                    <IconCode className="size-5 text-zinc-400" />
                   </div>
 
                   <div>
@@ -380,90 +418,164 @@ const CTA = () => {
 
                 </div>
 
+<button
+onClick={() => handleSmoothScroll("software")}
+  className="
+    relative
 
-                <button
-                  className="
-                    group/button
+    overflow-hidden
 
-                    mt-6
+    flex
+    w-full
+    items-center
+    justify-center
+    gap-2
 
-                    flex
-                    w-full
-                    items-center
-                    justify-center
-                    gap-2
+    rounded-xl
 
-                    rounded-xl
+    mt-6
+    px-5
+    py-3
 
-                    border
-                    border-zinc-700
+    font-semibold
 
-                    bg-zinc-800/60
+    text-zinc-200
 
-                    px-5
-                    py-3
+    border
+    border-zinc-700
 
-                    font-semibold
+    bg-zinc-900
 
-                    text-zinc-200
+    transition-all
+    duration-500
 
-                    transition-all
-                    duration-300
+    bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,.12)_50%,transparent_80%)]
+    bg-[length:400%_400%]
+    bg-[position:100%]
 
-                    hover:border-green-500/30
-                    hover:bg-zinc-800
-                    hover:text-white
-                  "
-                >
-                  Cuéntame tu proyecto
+    group-hover:bg-[position:0%]
+    group-hover:border-zinc-500
+    group-hover:text-white
+    group-hover:shadow-[0_0_40px_rgba(255,255,255,.08)]
 
-                  <IconArrowTop
-                    className="
-                      size-5
+    hover:bg-[position:0%]
+    hover:border-zinc-500
+    hover:text-white
+    hover:shadow-[0_0_40px_rgba(255,255,255,.08)]
+  "
+>
 
-                      transition-transform
-                      duration-300
+  {/* Glow blanco */}
 
-                      group-hover/button:-translate-y-1
-                      group-hover/button:translate-x-1
-                    "
-                  />
+  <div
+    className="
+      absolute
+      inset-0
 
-                </button>
+      opacity-0
+
+      bg-[radial-gradient(circle_at_center,_rgba(255,255,255,.08)_10%,transparent_70%)]
+
+      transition-opacity
+      duration-300
+
+      group-hover:opacity-100
+      hover:opacity-100
+    "
+  />
+
+  {/* Glow difuso */}
+
+  <div
+    className="
+      absolute
+      inset-0
+
+      blur-3xl
+      opacity-30
+
+      bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,.08)_50%,transparent_80%)]
+
+      bg-[length:350%]
+      bg-[position:100%]
+
+      transition-all
+      duration-700
+
+      group-hover:bg-[position:0%]
+      hover:bg-[position:0%]
+    "
+  />
+
+  <span className="relative z-10">
+    Cuéntame tu proyecto
+  </span>
+
+  <IconArrowTop
+    className="
+      relative
+      z-10
+
+      size-5
+
+      transition-transform
+      duration-300
+
+      group-hover:-translate-y-1
+      hover:-translate-y-1
+    "
+  />
+
+</button>
 
               </div>
 
             </div>
 
-
             {/* Seguridad */}
 
-            <div
-              className="
-                mt-10
+<div
+  className="
+    mt-10
 
-                flex
-                items-center
-                justify-center
-                gap-2
+    flex
+    justify-center
+  "
+>
+  <div className="max-w-3xl">
 
-                text-sm
-                text-zinc-500
-              "
-            >
-              <IconCheck className="size-4 text-green-500" />
+    <div className="flex items-center justify-center gap-3">
 
-              <span>
-                Sin compromiso inicial. La primera conversación sirve para
-                entender tu proyecto y definir la mejor forma de desarrollarlo.
-              </span>
+      <IconCheck className="size-7 text-green-400 flex-shrink-0" />
 
-            </div>
+      <h3 className="text-xl font-bold text-zinc-100">
+        Sin compromiso inicial
+      </h3>
+
+    </div>
+
+    <p
+      className="
+        mt-4
+
+        text-sm
+        leading-6
+
+        text-zinc-500
+        text-center
+      "
+    >
+      La primera conversación sirve para entender tu proyecto <br /> y definir la
+      mejor forma de desarrollarlo.
+    </p>
+
+  </div>
+</div>
 
 
             {/* Cierre */}
 
-            <div
+            {/* <div
               className="
                 mt-16
                 pt-8
@@ -508,7 +620,7 @@ const CTA = () => {
                 El resto lo construimos juntos.
               </p>
 
-            </div>
+            </div> */}
 
           </div>
 

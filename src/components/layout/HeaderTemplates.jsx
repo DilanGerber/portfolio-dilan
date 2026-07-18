@@ -122,6 +122,7 @@ const HeaderTemplates = () => {
             ))
           )}
           <button
+          onClick={() => handleSmoothScroll("software")}
     className="
       group
       relative

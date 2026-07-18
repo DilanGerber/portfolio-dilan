@@ -51,6 +51,16 @@ const fadeRight = {
 };
 
 const Hero = () => {
+  const handleSmoothScroll = (id) => {
+  const section = document.getElementById(id);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
   return (
     <section
       id="templates"
@@ -125,6 +135,7 @@ const Hero = () => {
               {/* BOTÓN PRINCIPAL */}
 
               <button
+              onClick={() => handleSmoothScroll("product")}
                 className="
                   group
                   relative
@@ -192,6 +203,7 @@ const Hero = () => {
               {/* BOTÓN SECUNDARIO */}
 
               <button
+              onClick={() => handleSmoothScroll("software")}
                 className="
                   group
                   relative
