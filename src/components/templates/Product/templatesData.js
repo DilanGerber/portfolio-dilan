@@ -53,26 +53,26 @@ const templatesData = [
     ]
   },
 
-  {
-    id: 4,
-    slug: "pulse",
-    name: "Pulse",
+  // {
+  //   id: 4,
+  //   slug: "pulse",
+  //   name: "Pulse",
 
-    category: "Portfolio",
+  //   category: "Portfolio",
 
-    description:
-      "Perfecto para creativos y freelancers.",
+  //   description:
+  //     "Perfecto para creativos y freelancers.",
 
-    price: 550,
+  //   price: 550,
 
-    preview: "/videos/pulse.mp4",
+  //   preview: "/videos/pulse.mp4",
 
-    badges: [
-      "Glass",
-      "Responsive",
-      "CMS"
-    ]
-  }
+  //   badges: [
+  //     "Glass",
+  //     "Responsive",
+  //     "CMS"
+  //   ]
+  // }
 ];
 
 export default templatesData;

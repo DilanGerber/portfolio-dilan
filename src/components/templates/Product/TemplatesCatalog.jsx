@@ -66,7 +66,7 @@ const TemplatesCatalog = () => {
   }, [filters]);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 mt-20">
+    <div id="all" className="max-w-7xl mx-auto px-6 mt-20">
 
           <h2 className="text-lg lg:text-4xl font-bold font-inter mt-12 mb-4 flex flex-row gap-2 md:gap-4 items-center">
             <IconGitHub className="size-8 md:size-10" /> Explorar todas las plantillas
